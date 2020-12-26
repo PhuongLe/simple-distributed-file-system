@@ -76,3 +76,6 @@ This application was fully tested on AWS with up to 20 nodes with comprehensive 
    <img src="./readme/measurements.png" width="650" alt=""/>
    <img src="./readme/measurements 2.png" width="650" alt=""/>
 </p>
+
+**Acknowledgment**
+This project is done by me PHUONG LE (PHOEBE), and GEETIKA SINGH POTDAR. 
