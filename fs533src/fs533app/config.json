@@ -1,0 +1,21 @@
+{
+    "TcpPort" : 50051,
+    "UdpPort" : 4000,
+    "LogPath" : "../fs533log",
+    "Fs533FilePath" : "../fs533db",
+    "LocalFilePath": "../localdb",
+    "MaxDatagramSize" : 8192,
+    "Timeout" : 10,
+    "HeartbeatIntervalTimeInMilliseconds" : 300,
+    "HeartbeatTimeoutInMilliseconds" : 1000,
+    "NumberOfPrecessorsAndSuccessors" : 2,
+    "NumberOfReplicas" : 3,
+    "WriteQuorum": 2,
+    "ReadQuorum": 2,
+    "FileChunkSize" : 1024,
+    "PendingWriteTransactionTimeoutInSeconds" : 300,
+	"GatewayNodes": ["172.31.23.150","172.31.7.225","172.31.19.78", "172.31.20.176"],
+    "NumberOfHeartbeatsShown" : 2,
+    "HearbeatLog" : true,
+    "Membershiplog": true
+}

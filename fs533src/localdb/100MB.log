@@ -1,0 +1,1149 @@
+2020/07/18 00:11:24 Loading configuration...
+2020/07/18 00:11:24 local ip address =  192.168.1.101
+2020/07/18 00:11:24 Start membership list initialized with 1st member: len=1, members = [192.168.1.101] ... [192.168.1.101-2020-07-18 00.11.24]
+.
+2020/07/18 00:11:24 Start sending heart beats...
+2020/07/18 00:11:24 Start mornitoring heart beats...
+2020/07/18 00:11:24 Start membership service 'node0' listening at '192.168.1.101:50051'...
+2020/07/18 00:11:24 Start file service 'node0' listening at '192.168.1.101:50051'...
+2020/07/18 00:11:33 RECEIVE NEW JOIN REQUEST from '192.168.1.70' with option spreading new join is true.
+2020/07/18 00:11:33 ************** ADD NEW JOIN ('192.168.1.70','192.168.1.70-2020-07-18 00.11.33) at 2020-07-18 00.11.33. Active members: len = 2, [[192.168.1.101 192.168.1.70] ..... [192.168.1.101-2020-07-18 00.11.24 192.168.1.70-2020-07-18 00.11.33]]
+2020/07/18 00:11:34 Start sending heartbeats to node 1 at '192.168.1.70', every 300 milliseconds
+.
+2020/07/18 00:11:34 Restart monitoring heartbeats since members list has changed.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 0
+2020/07/18 00:11:34 ************** HEARTBEAT PACKET: size =  6
+2020/07/18 00:11:34 Start listening to predecessor '1' from '192.168.1.70' at '2020-07-18 00.11.34'. 
+2020/07/18 00:11:34 Receive heartbeat from '192.168.1.70:57811', at '2020-07-18 00.11.34', count =  1.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 1
+2020/07/18 00:11:34 Receive heartbeat from '192.168.1.70:57811', at '2020-07-18 00.11.34', count =  2.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 2
+2020/07/18 00:11:34 Receive heartbeat from '192.168.1.70:57811', at '2020-07-18 00.11.34', count =  3.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 3
+2020/07/18 00:11:50 ************** Receive WRITE REGISTRATION request for file 'fs533testing.txt'.
+2020/07/18 00:11:50 The file fs533testing.txt is new so master node will allocate new replica nodes for it.
+2020/07/18 00:11:50 Send BACK UP request to all members.
+2020/07/18 00:11:50 Finish sending BACK UP request to all members.
+2020/07/18 00:11:50 ************** Send WRITE REGISTER response for file 'fs533testing.txt': version 1, preference nodes are '[192.168.1.101 192.168.1.70]', need user interaction is false.
+2020/07/18 00:11:50 ************** Receive WRITE PREPARATION request.
+2020/07/18 00:11:50 Write 1024 byte from client to file ___tempfile_d23f5e47-fb50-465c-ad5a-bf89b0b49ceb 
+2020/07/18 00:11:50 ************** Send WRITE PREPARATION response for file fs533testing.txt.
+2020/07/18 00:11:50 ************** Receive WRITE END request for file 'fs533testing.txt'.
+2020/07/18 00:11:50 send WRITE END request to all perference nodes '[192.168.1.101 192.168.1.70]'.
+2020/07/18 00:11:50 delete temporary file '___tempfile_d23f5e47-fb50-465c-ad5a-bf89b0b49ceb' for file 'fs533testing.txt'
+2020/07/18 00:11:50 File ../fs533db/___tempfile_d23f5e47-fb50-465c-ad5a-bf89b0b49ceb is removed
+2020/07/18 00:11:50 send WRITE END request to node '192.168.1.70'.
+2020/07/18 00:11:50 Send BACK UP request to all members.
+2020/07/18 00:11:50 Finish sending BACK UP request to all members.
+2020/07/18 00:11:50 ************** Send WRITE END response for file 'fs533testing.txt'.
+2020/07/18 00:12:03 Receive READ ACQUIRE request for file fs533testing.txt.
+2020/07/18 00:12:03 Send READ ACQUIRE response for file 'fs533testing.txt'. The replicated file was found with version '1' on  nodes '[192.168.1.101 192.168.1.70]'
+2020/07/18 00:15:16 Receive DELETE file fs533testing.txt request.
+2020/07/18 00:15:16 Error: it is unable to remove file fs533testing.txt due to error remove fs533testing.txt: The system cannot find the file specified.
+2020/07/18 00:15:16 Send BACK UP request to all members.
+2020/07/18 00:15:16 Finish sending BACK UP request to all members.
+2020/07/18 00:15:23 Receive LIST ALL request.
+2020/07/18 00:15:23 Send LIST ALL response.
+2020/07/18 00:24:08 ************** DETECT FAILURE of node '192.168.1.70' at '2020-07-18 00.24.08', last time received heartbeat is '2020-07-18T00:24:07-07:00', count = 2490, diff = 1201
+2020/07/18 00:24:08 Start notifying other nodes about failure of : 192.168.1.70
+2020/07/18 00:24:08 ************** REMOVE NODE '192.168.1.70-2020-07-18 00.11.33' at '2020-07-18 00.24.08' (previous index = 1). Active members: len = 1, [[192.168.1.101] ..... [192.168.1.101-2020-07-18 00.11.24]]
+2020/07/18 00:24:08 Send BACK UP request to all members.
+2020/07/18 00:24:08 Finish sending BACK UP request to all members.
+2020/07/18 00:24:08 Restart sending heartbeats since active members list has changed.
+2020/07/18 00:24:10 Uncaught error while listening to heartbeat read udp 192.168.1.101:4000: i/o timeout
+
+2020/07/18 00:11:24 Loading configuration...
+2020/07/18 00:11:24 local ip address =  192.168.1.101
+2020/07/18 00:11:24 Start membership list initialized with 1st member: len=1, members = [192.168.1.101] ... [192.168.1.101-2020-07-18 00.11.24]
+.
+2020/07/18 00:11:24 Start sending heart beats...
+2020/07/18 00:11:24 Start mornitoring heart beats...
+2020/07/18 00:11:24 Start membership service 'node0' listening at '192.168.1.101:50051'...
+2020/07/18 00:11:24 Start file service 'node0' listening at '192.168.1.101:50051'...
+2020/07/18 00:11:33 RECEIVE NEW JOIN REQUEST from '192.168.1.70' with option spreading new join is true.
+2020/07/18 00:11:33 ************** ADD NEW JOIN ('192.168.1.70','192.168.1.70-2020-07-18 00.11.33) at 2020-07-18 00.11.33. Active members: len = 2, [[192.168.1.101 192.168.1.70] ..... [192.168.1.101-2020-07-18 00.11.24 192.168.1.70-2020-07-18 00.11.33]]
+2020/07/18 00:11:34 Start sending heartbeats to node 1 at '192.168.1.70', every 300 milliseconds
+.
+2020/07/18 00:11:34 Restart monitoring heartbeats since members list has changed.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 0
+2020/07/18 00:11:34 ************** HEARTBEAT PACKET: size =  6
+2020/07/18 00:11:34 Start listening to predecessor '1' from '192.168.1.70' at '2020-07-18 00.11.34'. 
+2020/07/18 00:11:34 Receive heartbeat from '192.168.1.70:57811', at '2020-07-18 00.11.34', count =  1.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 1
+2020/07/18 00:11:34 Receive heartbeat from '192.168.1.70:57811', at '2020-07-18 00.11.34', count =  2.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 2
+2020/07/18 00:11:34 Receive heartbeat from '192.168.1.70:57811', at '2020-07-18 00.11.34', count =  3.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 3
+2020/07/18 00:11:50 ************** Receive WRITE REGISTRATION request for file 'fs533testing.txt'.
+2020/07/18 00:11:50 The file fs533testing.txt is new so master node will allocate new replica nodes for it.
+2020/07/18 00:11:50 Send BACK UP request to all members.
+2020/07/18 00:11:50 Finish sending BACK UP request to all members.
+2020/07/18 00:11:50 ************** Send WRITE REGISTER response for file 'fs533testing.txt': version 1, preference nodes are '[192.168.1.101 192.168.1.70]', need user interaction is false.
+2020/07/18 00:11:50 ************** Receive WRITE PREPARATION request.
+2020/07/18 00:11:50 Write 1024 byte from client to file ___tempfile_d23f5e47-fb50-465c-ad5a-bf89b0b49ceb 
+2020/07/18 00:11:50 ************** Send WRITE PREPARATION response for file fs533testing.txt.
+2020/07/18 00:11:50 ************** Receive WRITE END request for file 'fs533testing.txt'.
+2020/07/18 00:11:50 send WRITE END request to all perference nodes '[192.168.1.101 192.168.1.70]'.
+2020/07/18 00:11:50 delete temporary file '___tempfile_d23f5e47-fb50-465c-ad5a-bf89b0b49ceb' for file 'fs533testing.txt'
+2020/07/18 00:11:50 File ../fs533db/___tempfile_d23f5e47-fb50-465c-ad5a-bf89b0b49ceb is removed
+2020/07/18 00:11:50 send WRITE END request to node '192.168.1.70'.
+2020/07/18 00:11:50 Send BACK UP request to all members.
+2020/07/18 00:11:50 Finish sending BACK UP request to all members.
+2020/07/18 00:11:50 ************** Send WRITE END response for file 'fs533testing.txt'.
+2020/07/18 00:12:03 Receive READ ACQUIRE request for file fs533testing.txt.
+2020/07/18 00:12:03 Send READ ACQUIRE response for file 'fs533testing.txt'. The replicated file was found with version '1' on  nodes '[192.168.1.101 192.168.1.70]'
+2020/07/18 00:15:16 Receive DELETE file fs533testing.txt request.
+2020/07/18 00:15:16 Error: it is unable to remove file fs533testing.txt due to error remove fs533testing.txt: The system cannot find the file specified.
+2020/07/18 00:15:16 Send BACK UP request to all members.
+2020/07/18 00:15:16 Finish sending BACK UP request to all members.
+2020/07/18 00:15:23 Receive LIST ALL request.
+2020/07/18 00:15:23 Send LIST ALL response.
+2020/07/18 00:24:08 ************** DETECT FAILURE of node '192.168.1.70' at '2020-07-18 00.24.08', last time received heartbeat is '2020-07-18T00:24:07-07:00', count = 2490, diff = 1201
+2020/07/18 00:24:08 Start notifying other nodes about failure of : 192.168.1.70
+2020/07/18 00:24:08 ************** REMOVE NODE '192.168.1.70-2020-07-18 00.11.33' at '2020-07-18 00.24.08' (previous index = 1). Active members: len = 1, [[192.168.1.101] ..... [192.168.1.101-2020-07-18 00.11.24]]
+2020/07/18 00:24:08 Send BACK UP request to all members.
+2020/07/18 00:24:08 Finish sending BACK UP request to all members.
+2020/07/18 00:24:08 Restart sending heartbeats since active members list has changed.
+2020/07/18 00:24:10 Uncaught error while listening to heartbeat read udp 192.168.1.101:4000: i/o timeout
+2020/07/18 00:11:24 Loading configuration...
+2020/07/18 00:11:24 local ip address =  192.168.1.101
+2020/07/18 00:11:24 Start membership list initialized with 1st member: len=1, members = [192.168.1.101] ... [192.168.1.101-2020-07-18 00.11.24]
+.
+2020/07/18 00:11:24 Start sending heart beats...
+2020/07/18 00:11:24 Start mornitoring heart beats...
+2020/07/18 00:11:24 Start membership service 'node0' listening at '192.168.1.101:50051'...
+2020/07/18 00:11:24 Start file service 'node0' listening at '192.168.1.101:50051'...
+2020/07/18 00:11:33 RECEIVE NEW JOIN REQUEST from '192.168.1.70' with option spreading new join is true.
+2020/07/18 00:11:33 ************** ADD NEW JOIN ('192.168.1.70','192.168.1.70-2020-07-18 00.11.33) at 2020-07-18 00.11.33. Active members: len = 2, [[192.168.1.101 192.168.1.70] ..... [192.168.1.101-2020-07-18 00.11.24 192.168.1.70-2020-07-18 00.11.33]]
+2020/07/18 00:11:34 Start sending heartbeats to node 1 at '192.168.1.70', every 300 milliseconds
+.
+2020/07/18 00:11:34 Restart monitoring heartbeats since members list has changed.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 0
+2020/07/18 00:11:34 ************** HEARTBEAT PACKET: size =  6
+2020/07/18 00:11:34 Start listening to predecessor '1' from '192.168.1.70' at '2020-07-18 00.11.34'. 
+2020/07/18 00:11:34 Receive heartbeat from '192.168.1.70:57811', at '2020-07-18 00.11.34', count =  1.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 1
+2020/07/18 00:11:34 Receive heartbeat from '192.168.1.70:57811', at '2020-07-18 00.11.34', count =  2.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 2
+2020/07/18 00:11:34 Receive heartbeat from '192.168.1.70:57811', at '2020-07-18 00.11.34', count =  3.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 3
+2020/07/18 00:11:50 ************** Receive WRITE REGISTRATION request for file 'fs533testing.txt'.
+2020/07/18 00:11:50 The file fs533testing.txt is new so master node will allocate new replica nodes for it.
+2020/07/18 00:11:50 Send BACK UP request to all members.
+2020/07/18 00:11:50 Finish sending BACK UP request to all members.
+2020/07/18 00:11:50 ************** Send WRITE REGISTER response for file 'fs533testing.txt': version 1, preference nodes are '[192.168.1.101 192.168.1.70]', need user interaction is false.
+2020/07/18 00:11:50 ************** Receive WRITE PREPARATION request.
+2020/07/18 00:11:50 Write 1024 byte from client to file ___tempfile_d23f5e47-fb50-465c-ad5a-bf89b0b49ceb 
+2020/07/18 00:11:50 ************** Send WRITE PREPARATION response for file fs533testing.txt.
+2020/07/18 00:11:50 ************** Receive WRITE END request for file 'fs533testing.txt'.
+2020/07/18 00:11:50 send WRITE END request to all perference nodes '[192.168.1.101 192.168.1.70]'.
+2020/07/18 00:11:50 delete temporary file '___tempfile_d23f5e47-fb50-465c-ad5a-bf89b0b49ceb' for file 'fs533testing.txt'
+2020/07/18 00:11:50 File ../fs533db/___tempfile_d23f5e47-fb50-465c-ad5a-bf89b0b49ceb is removed
+2020/07/18 00:11:50 send WRITE END request to node '192.168.1.70'.
+2020/07/18 00:11:50 Send BACK UP request to all members.
+2020/07/18 00:11:50 Finish sending BACK UP request to all members.
+2020/07/18 00:11:50 ************** Send WRITE END response for file 'fs533testing.txt'.
+2020/07/18 00:12:03 Receive READ ACQUIRE request for file fs533testing.txt.
+2020/07/18 00:12:03 Send READ ACQUIRE response for file 'fs533testing.txt'. The replicated file was found with version '1' on  nodes '[192.168.1.101 192.168.1.70]'
+2020/07/18 00:15:16 Receive DELETE file fs533testing.txt request.
+2020/07/18 00:15:16 Error: it is unable to remove file fs533testing.txt due to error remove fs533testing.txt: The system cannot find the file specified.
+2020/07/18 00:15:16 Send BACK UP request to all members.
+2020/07/18 00:15:16 Finish sending BACK UP request to all members.
+2020/07/18 00:15:23 Receive LIST ALL request.
+2020/07/18 00:15:23 Send LIST ALL response.
+2020/07/18 00:24:08 ************** DETECT FAILURE of node '192.168.1.70' at '2020-07-18 00.24.08', last time received heartbeat is '2020-07-18T00:24:07-07:00', count = 2490, diff = 1201
+2020/07/18 00:24:08 Start notifying other nodes about failure of : 192.168.1.70
+2020/07/18 00:24:08 ************** REMOVE NODE '192.168.1.70-2020-07-18 00.11.33' at '2020-07-18 00.24.08' (previous index = 1). Active members: len = 1, [[192.168.1.101] ..... [192.168.1.101-2020-07-18 00.11.24]]
+2020/07/18 00:24:08 Send BACK UP request to all members.
+2020/07/18 00:24:08 Finish sending BACK UP request to all members.
+2020/07/18 00:24:08 Restart sending heartbeats since active members list has changed.
+2020/07/18 00:24:10 Uncaught error while listening to heartbeat read udp 192.168.1.101:4000: i/o timeout
+2020/07/18 00:11:24 Loading configuration...
+2020/07/18 00:11:24 local ip address =  192.168.1.101
+2020/07/18 00:11:24 Start membership list initialized with 1st member: len=1, members = [192.168.1.101] ... [192.168.1.101-2020-07-18 00.11.24]
+.
+2020/07/18 00:11:24 Start sending heart beats...
+2020/07/18 00:11:24 Start mornitoring heart beats...
+2020/07/18 00:11:24 Start membership service 'node0' listening at '192.168.1.101:50051'...
+2020/07/18 00:11:24 Start file service 'node0' listening at '192.168.1.101:50051'...
+2020/07/18 00:11:33 RECEIVE NEW JOIN REQUEST from '192.168.1.70' with option spreading new join is true.
+2020/07/18 00:11:33 ************** ADD NEW JOIN ('192.168.1.70','192.168.1.70-2020-07-18 00.11.33) at 2020-07-18 00.11.33. Active members: len = 2, [[192.168.1.101 192.168.1.70] ..... [192.168.1.101-2020-07-18 00.11.24 192.168.1.70-2020-07-18 00.11.33]]
+2020/07/18 00:11:34 Start sending heartbeats to node 1 at '192.168.1.70', every 300 milliseconds
+.
+2020/07/18 00:11:34 Restart monitoring heartbeats since members list has changed.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 0
+2020/07/18 00:11:34 ************** HEARTBEAT PACKET: size =  6
+2020/07/18 00:11:34 Start listening to predecessor '1' from '192.168.1.70' at '2020-07-18 00.11.34'. 
+2020/07/18 00:11:34 Receive heartbeat from '192.168.1.70:57811', at '2020-07-18 00.11.34', count =  1.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 1
+2020/07/18 00:11:34 Receive heartbeat from '192.168.1.70:57811', at '2020-07-18 00.11.34', count =  2.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 2
+2020/07/18 00:11:34 Receive heartbeat from '192.168.1.70:57811', at '2020-07-18 00.11.34', count =  3.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 3
+2020/07/18 00:11:50 ************** Receive WRITE REGISTRATION request for file 'fs533testing.txt'.
+2020/07/18 00:11:50 The file fs533testing.txt is new so master node will allocate new replica nodes for it.
+2020/07/18 00:11:50 Send BACK UP request to all members.
+2020/07/18 00:11:50 Finish sending BACK UP request to all members.
+2020/07/18 00:11:50 ************** Send WRITE REGISTER response for file 'fs533testing.txt': version 1, preference nodes are '[192.168.1.101 192.168.1.70]', need user interaction is false.
+2020/07/18 00:11:50 ************** Receive WRITE PREPARATION request.
+2020/07/18 00:11:50 Write 1024 byte from client to file ___tempfile_d23f5e47-fb50-465c-ad5a-bf89b0b49ceb 
+2020/07/18 00:11:50 ************** Send WRITE PREPARATION response for file fs533testing.txt.
+2020/07/18 00:11:50 ************** Receive WRITE END request for file 'fs533testing.txt'.
+2020/07/18 00:11:50 send WRITE END request to all perference nodes '[192.168.1.101 192.168.1.70]'.
+2020/07/18 00:11:50 delete temporary file '___tempfile_d23f5e47-fb50-465c-ad5a-bf89b0b49ceb' for file 'fs533testing.txt'
+2020/07/18 00:11:50 File ../fs533db/___tempfile_d23f5e47-fb50-465c-ad5a-bf89b0b49ceb is removed
+2020/07/18 00:11:50 send WRITE END request to node '192.168.1.70'.
+2020/07/18 00:11:50 Send BACK UP request to all members.
+2020/07/18 00:11:50 Finish sending BACK UP request to all members.
+2020/07/18 00:11:50 ************** Send WRITE END response for file 'fs533testing.txt'.
+2020/07/18 00:12:03 Receive READ ACQUIRE request for file fs533testing.txt.
+2020/07/18 00:12:03 Send READ ACQUIRE response for file 'fs533testing.txt'. The replicated file was found with version '1' on  nodes '[192.168.1.101 192.168.1.70]'
+2020/07/18 00:15:16 Receive DELETE file fs533testing.txt request.
+2020/07/18 00:15:16 Error: it is unable to remove file fs533testing.txt due to error remove fs533testing.txt: The system cannot find the file specified.
+2020/07/18 00:15:16 Send BACK UP request to all members.
+2020/07/18 00:15:16 Finish sending BACK UP request to all members.
+2020/07/18 00:15:23 Receive LIST ALL request.
+2020/07/18 00:15:23 Send LIST ALL response.
+2020/07/18 00:24:08 ************** DETECT FAILURE of node '192.168.1.70' at '2020-07-18 00.24.08', last time received heartbeat is '2020-07-18T00:24:07-07:00', count = 2490, diff = 1201
+2020/07/18 00:24:08 Start notifying other nodes about failure of : 192.168.1.70
+2020/07/18 00:24:08 ************** REMOVE NODE '192.168.1.70-2020-07-18 00.11.33' at '2020-07-18 00.24.08' (previous index = 1). Active members: len = 1, [[192.168.1.101] ..... [192.168.1.101-2020-07-18 00.11.24]]
+2020/07/18 00:24:08 Send BACK UP request to all members.
+2020/07/18 00:24:08 Finish sending BACK UP request to all members.
+2020/07/18 00:24:08 Restart sending heartbeats since active members list has changed.
+2020/07/18 00:24:10 Uncaught error while listening to heartbeat read udp 192.168.1.101:4000: i/o timeout
+2020/07/18 00:11:24 Loading configuration...
+2020/07/18 00:11:24 local ip address =  192.168.1.101
+2020/07/18 00:11:24 Start membership list initialized with 1st member: len=1, members = [192.168.1.101] ... [192.168.1.101-2020-07-18 00.11.24]
+.
+2020/07/18 00:11:24 Start sending heart beats...
+2020/07/18 00:11:24 Start mornitoring heart beats...
+2020/07/18 00:11:24 Start membership service 'node0' listening at '192.168.1.101:50051'...
+2020/07/18 00:11:24 Start file service 'node0' listening at '192.168.1.101:50051'...
+2020/07/18 00:11:33 RECEIVE NEW JOIN REQUEST from '192.168.1.70' with option spreading new join is true.
+2020/07/18 00:11:33 ************** ADD NEW JOIN ('192.168.1.70','192.168.1.70-2020-07-18 00.11.33) at 2020-07-18 00.11.33. Active members: len = 2, [[192.168.1.101 192.168.1.70] ..... [192.168.1.101-2020-07-18 00.11.24 192.168.1.70-2020-07-18 00.11.33]]
+2020/07/18 00:11:34 Start sending heartbeats to node 1 at '192.168.1.70', every 300 milliseconds
+.
+2020/07/18 00:11:34 Restart monitoring heartbeats since members list has changed.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 0
+2020/07/18 00:11:34 ************** HEARTBEAT PACKET: size =  6
+2020/07/18 00:11:34 Start listening to predecessor '1' from '192.168.1.70' at '2020-07-18 00.11.34'. 
+2020/07/18 00:11:34 Receive heartbeat from '192.168.1.70:57811', at '2020-07-18 00.11.34', count =  1.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 1
+2020/07/18 00:11:34 Receive heartbeat from '192.168.1.70:57811', at '2020-07-18 00.11.34', count =  2.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 2
+2020/07/18 00:11:34 Receive heartbeat from '192.168.1.70:57811', at '2020-07-18 00.11.34', count =  3.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 3
+2020/07/18 00:11:50 ************** Receive WRITE REGISTRATION request for file 'fs533testing.txt'.
+2020/07/18 00:11:50 The file fs533testing.txt is new so master node will allocate new replica nodes for it.
+2020/07/18 00:11:50 Send BACK UP request to all members.
+2020/07/18 00:11:50 Finish sending BACK UP request to all members.
+2020/07/18 00:11:50 ************** Send WRITE REGISTER response for file 'fs533testing.txt': version 1, preference nodes are '[192.168.1.101 192.168.1.70]', need user interaction is false.
+2020/07/18 00:11:50 ************** Receive WRITE PREPARATION request.
+2020/07/18 00:11:50 Write 1024 byte from client to file ___tempfile_d23f5e47-fb50-465c-ad5a-bf89b0b49ceb 
+2020/07/18 00:11:50 ************** Send WRITE PREPARATION response for file fs533testing.txt.
+2020/07/18 00:11:50 ************** Receive WRITE END request for file 'fs533testing.txt'.
+2020/07/18 00:11:50 send WRITE END request to all perference nodes '[192.168.1.101 192.168.1.70]'.
+2020/07/18 00:11:50 delete temporary file '___tempfile_d23f5e47-fb50-465c-ad5a-bf89b0b49ceb' for file 'fs533testing.txt'
+2020/07/18 00:11:50 File ../fs533db/___tempfile_d23f5e47-fb50-465c-ad5a-bf89b0b49ceb is removed
+2020/07/18 00:11:50 send WRITE END request to node '192.168.1.70'.
+2020/07/18 00:11:50 Send BACK UP request to all members.
+2020/07/18 00:11:50 Finish sending BACK UP request to all members.
+2020/07/18 00:11:50 ************** Send WRITE END response for file 'fs533testing.txt'.
+2020/07/18 00:12:03 Receive READ ACQUIRE request for file fs533testing.txt.
+2020/07/18 00:12:03 Send READ ACQUIRE response for file 'fs533testing.txt'. The replicated file was found with version '1' on  nodes '[192.168.1.101 192.168.1.70]'
+2020/07/18 00:15:16 Receive DELETE file fs533testing.txt request.
+2020/07/18 00:15:16 Error: it is unable to remove file fs533testing.txt due to error remove fs533testing.txt: The system cannot find the file specified.
+2020/07/18 00:15:16 Send BACK UP request to all members.
+2020/07/18 00:15:16 Finish sending BACK UP request to all members.
+2020/07/18 00:15:23 Receive LIST ALL request.
+2020/07/18 00:15:23 Send LIST ALL response.
+2020/07/18 00:24:08 ************** DETECT FAILURE of node '192.168.1.70' at '2020-07-18 00.24.08', last time received heartbeat is '2020-07-18T00:24:07-07:00', count = 2490, diff = 1201
+2020/07/18 00:24:08 Start notifying other nodes about failure of : 192.168.1.70
+2020/07/18 00:24:08 ************** REMOVE NODE '192.168.1.70-2020-07-18 00.11.33' at '2020-07-18 00.24.08' (previous index = 1). Active members: len = 1, [[192.168.1.101] ..... [192.168.1.101-2020-07-18 00.11.24]]
+2020/07/18 00:24:08 Send BACK UP request to all members.
+2020/07/18 00:24:08 Finish sending BACK UP request to all members.
+2020/07/18 00:24:08 Restart sending heartbeats since active members list has changed.
+2020/07/18 00:24:10 Uncaught error while listening to heartbeat read udp 192.168.1.101:4000: i/o timeout
+2020/07/18 00:11:24 Loading configuration...
+2020/07/18 00:11:24 local ip address =  192.168.1.101
+2020/07/18 00:11:24 Start membership list initialized with 1st member: len=1, members = [192.168.1.101] ... [192.168.1.101-2020-07-18 00.11.24]
+.
+2020/07/18 00:11:24 Start sending heart beats...
+2020/07/18 00:11:24 Start mornitoring heart beats...
+2020/07/18 00:11:24 Start membership service 'node0' listening at '192.168.1.101:50051'...
+2020/07/18 00:11:24 Start file service 'node0' listening at '192.168.1.101:50051'...
+2020/07/18 00:11:33 RECEIVE NEW JOIN REQUEST from '192.168.1.70' with option spreading new join is true.
+2020/07/18 00:11:33 ************** ADD NEW JOIN ('192.168.1.70','192.168.1.70-2020-07-18 00.11.33) at 2020-07-18 00.11.33. Active members: len = 2, [[192.168.1.101 192.168.1.70] ..... [192.168.1.101-2020-07-18 00.11.24 192.168.1.70-2020-07-18 00.11.33]]
+2020/07/18 00:11:34 Start sending heartbeats to node 1 at '192.168.1.70', every 300 milliseconds
+.
+2020/07/18 00:11:34 Restart monitoring heartbeats since members list has changed.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 0
+2020/07/18 00:11:34 ************** HEARTBEAT PACKET: size =  6
+2020/07/18 00:11:34 Start listening to predecessor '1' from '192.168.1.70' at '2020-07-18 00.11.34'. 
+2020/07/18 00:11:34 Receive heartbeat from '192.168.1.70:57811', at '2020-07-18 00.11.34', count =  1.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 1
+2020/07/18 00:11:34 Receive heartbeat from '192.168.1.70:57811', at '2020-07-18 00.11.34', count =  2.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 2
+2020/07/18 00:11:34 Receive heartbeat from '192.168.1.70:57811', at '2020-07-18 00.11.34', count =  3.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 3
+2020/07/18 00:11:50 ************** Receive WRITE REGISTRATION request for file 'fs533testing.txt'.
+2020/07/18 00:11:50 The file fs533testing.txt is new so master node will allocate new replica nodes for it.
+2020/07/18 00:11:50 Send BACK UP request to all members.
+2020/07/18 00:11:50 Finish sending BACK UP request to all members.
+2020/07/18 00:11:50 ************** Send WRITE REGISTER response for file 'fs533testing.txt': version 1, preference nodes are '[192.168.1.101 192.168.1.70]', need user interaction is false.
+2020/07/18 00:11:50 ************** Receive WRITE PREPARATION request.
+2020/07/18 00:11:50 Write 1024 byte from client to file ___tempfile_d23f5e47-fb50-465c-ad5a-bf89b0b49ceb 
+2020/07/18 00:11:50 ************** Send WRITE PREPARATION response for file fs533testing.txt.
+2020/07/18 00:11:50 ************** Receive WRITE END request for file 'fs533testing.txt'.
+2020/07/18 00:11:50 send WRITE END request to all perference nodes '[192.168.1.101 192.168.1.70]'.
+2020/07/18 00:11:50 delete temporary file '___tempfile_d23f5e47-fb50-465c-ad5a-bf89b0b49ceb' for file 'fs533testing.txt'
+2020/07/18 00:11:50 File ../fs533db/___tempfile_d23f5e47-fb50-465c-ad5a-bf89b0b49ceb is removed
+2020/07/18 00:11:50 send WRITE END request to node '192.168.1.70'.
+2020/07/18 00:11:50 Send BACK UP request to all members.
+2020/07/18 00:11:50 Finish sending BACK UP request to all members.
+2020/07/18 00:11:50 ************** Send WRITE END response for file 'fs533testing.txt'.
+2020/07/18 00:12:03 Receive READ ACQUIRE request for file fs533testing.txt.
+2020/07/18 00:12:03 Send READ ACQUIRE response for file 'fs533testing.txt'. The replicated file was found with version '1' on  nodes '[192.168.1.101 192.168.1.70]'
+2020/07/18 00:15:16 Receive DELETE file fs533testing.txt request.
+2020/07/18 00:15:16 Error: it is unable to remove file fs533testing.txt due to error remove fs533testing.txt: The system cannot find the file specified.
+2020/07/18 00:15:16 Send BACK UP request to all members.
+2020/07/18 00:15:16 Finish sending BACK UP request to all members.
+2020/07/18 00:15:23 Receive LIST ALL request.
+2020/07/18 00:15:23 Send LIST ALL response.
+2020/07/18 00:24:08 ************** DETECT FAILURE of node '192.168.1.70' at '2020-07-18 00.24.08', last time received heartbeat is '2020-07-18T00:24:07-07:00', count = 2490, diff = 1201
+2020/07/18 00:24:08 Start notifying other nodes about failure of : 192.168.1.70
+2020/07/18 00:24:08 ************** REMOVE NODE '192.168.1.70-2020-07-18 00.11.33' at '2020-07-18 00.24.08' (previous index = 1). Active members: len = 1, [[192.168.1.101] ..... [192.168.1.101-2020-07-18 00.11.24]]
+2020/07/18 00:24:08 Send BACK UP request to all members.
+2020/07/18 00:24:08 Finish sending BACK UP request to all members.
+2020/07/18 00:24:08 Restart sending heartbeats since active members list has changed.
+2020/07/18 00:24:10 Uncaught error while listening to heartbeat read udp 192.168.1.101:4000: i/o timeout
+
+2020/07/18 00:11:24 Loading configuration...
+2020/07/18 00:11:24 local ip address =  192.168.1.101
+2020/07/18 00:11:24 Start membership list initialized with 1st member: len=1, members = [192.168.1.101] ... [192.168.1.101-2020-07-18 00.11.24]
+.
+2020/07/18 00:11:24 Start sending heart beats...
+2020/07/18 00:11:24 Start mornitoring heart beats...
+2020/07/18 00:11:24 Start membership service 'node0' listening at '192.168.1.101:50051'...
+2020/07/18 00:11:24 Start file service 'node0' listening at '192.168.1.101:50051'...
+2020/07/18 00:11:33 RECEIVE NEW JOIN REQUEST from '192.168.1.70' with option spreading new join is true.
+2020/07/18 00:11:33 ************** ADD NEW JOIN ('192.168.1.70','192.168.1.70-2020-07-18 00.11.33) at 2020-07-18 00.11.33. Active members: len = 2, [[192.168.1.101 192.168.1.70] ..... [192.168.1.101-2020-07-18 00.11.24 192.168.1.70-2020-07-18 00.11.33]]
+2020/07/18 00:11:34 Start sending heartbeats to node 1 at '192.168.1.70', every 300 milliseconds
+.
+2020/07/18 00:11:34 Restart monitoring heartbeats since members list has changed.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 0
+2020/07/18 00:11:34 ************** HEARTBEAT PACKET: size =  6
+2020/07/18 00:11:34 Start listening to predecessor '1' from '192.168.1.70' at '2020-07-18 00.11.34'. 
+2020/07/18 00:11:34 Receive heartbeat from '192.168.1.70:57811', at '2020-07-18 00.11.34', count =  1.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 1
+2020/07/18 00:11:34 Receive heartbeat from '192.168.1.70:57811', at '2020-07-18 00.11.34', count =  2.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 2
+2020/07/18 00:11:34 Receive heartbeat from '192.168.1.70:57811', at '2020-07-18 00.11.34', count =  3.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 3
+2020/07/18 00:11:50 ************** Receive WRITE REGISTRATION request for file 'fs533testing.txt'.
+2020/07/18 00:11:50 The file fs533testing.txt is new so master node will allocate new replica nodes for it.
+2020/07/18 00:11:50 Send BACK UP request to all members.
+2020/07/18 00:11:50 Finish sending BACK UP request to all members.
+2020/07/18 00:11:50 ************** Send WRITE REGISTER response for file 'fs533testing.txt': version 1, preference nodes are '[192.168.1.101 192.168.1.70]', need user interaction is false.
+2020/07/18 00:11:50 ************** Receive WRITE PREPARATION request.
+2020/07/18 00:11:50 Write 1024 byte from client to file ___tempfile_d23f5e47-fb50-465c-ad5a-bf89b0b49ceb 
+2020/07/18 00:11:50 ************** Send WRITE PREPARATION response for file fs533testing.txt.
+2020/07/18 00:11:50 ************** Receive WRITE END request for file 'fs533testing.txt'.
+2020/07/18 00:11:50 send WRITE END request to all perference nodes '[192.168.1.101 192.168.1.70]'.
+2020/07/18 00:11:50 delete temporary file '___tempfile_d23f5e47-fb50-465c-ad5a-bf89b0b49ceb' for file 'fs533testing.txt'
+2020/07/18 00:11:50 File ../fs533db/___tempfile_d23f5e47-fb50-465c-ad5a-bf89b0b49ceb is removed
+2020/07/18 00:11:50 send WRITE END request to node '192.168.1.70'.
+2020/07/18 00:11:50 Send BACK UP request to all members.
+2020/07/18 00:11:50 Finish sending BACK UP request to all members.
+2020/07/18 00:11:50 ************** Send WRITE END response for file 'fs533testing.txt'.
+2020/07/18 00:12:03 Receive READ ACQUIRE request for file fs533testing.txt.
+2020/07/18 00:12:03 Send READ ACQUIRE response for file 'fs533testing.txt'. The replicated file was found with version '1' on  nodes '[192.168.1.101 192.168.1.70]'
+2020/07/18 00:15:16 Receive DELETE file fs533testing.txt request.
+2020/07/18 00:15:16 Error: it is unable to remove file fs533testing.txt due to error remove fs533testing.txt: The system cannot find the file specified.
+2020/07/18 00:15:16 Send BACK UP request to all members.
+2020/07/18 00:15:16 Finish sending BACK UP request to all members.
+2020/07/18 00:15:23 Receive LIST ALL request.
+2020/07/18 00:15:23 Send LIST ALL response.
+2020/07/18 00:24:08 ************** DETECT FAILURE of node '192.168.1.70' at '2020-07-18 00.24.08', last time received heartbeat is '2020-07-18T00:24:07-07:00', count = 2490, diff = 1201
+2020/07/18 00:24:08 Start notifying other nodes about failure of : 192.168.1.70
+2020/07/18 00:24:08 ************** REMOVE NODE '192.168.1.70-2020-07-18 00.11.33' at '2020-07-18 00.24.08' (previous index = 1). Active members: len = 1, [[192.168.1.101] ..... [192.168.1.101-2020-07-18 00.11.24]]
+2020/07/18 00:24:08 Send BACK UP request to all members.
+2020/07/18 00:24:08 Finish sending BACK UP request to all members.
+2020/07/18 00:24:08 Restart sending heartbeats since active members list has changed.
+2020/07/18 00:24:10 Uncaught error while listening to heartbeat read udp 192.168.1.101:4000: i/o timeout
+2020/07/18 00:11:24 Loading configuration...
+2020/07/18 00:11:24 local ip address =  192.168.1.101
+2020/07/18 00:11:24 Start membership list initialized with 1st member: len=1, members = [192.168.1.101] ... [192.168.1.101-2020-07-18 00.11.24]
+.
+2020/07/18 00:11:24 Start sending heart beats...
+2020/07/18 00:11:24 Start mornitoring heart beats...
+2020/07/18 00:11:24 Start membership service 'node0' listening at '192.168.1.101:50051'...
+2020/07/18 00:11:24 Start file service 'node0' listening at '192.168.1.101:50051'...
+2020/07/18 00:11:33 RECEIVE NEW JOIN REQUEST from '192.168.1.70' with option spreading new join is true.
+2020/07/18 00:11:33 ************** ADD NEW JOIN ('192.168.1.70','192.168.1.70-2020-07-18 00.11.33) at 2020-07-18 00.11.33. Active members: len = 2, [[192.168.1.101 192.168.1.70] ..... [192.168.1.101-2020-07-18 00.11.24 192.168.1.70-2020-07-18 00.11.33]]
+2020/07/18 00:11:34 Start sending heartbeats to node 1 at '192.168.1.70', every 300 milliseconds
+.
+2020/07/18 00:11:34 Restart monitoring heartbeats since members list has changed.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 0
+2020/07/18 00:11:34 ************** HEARTBEAT PACKET: size =  6
+2020/07/18 00:11:34 Start listening to predecessor '1' from '192.168.1.70' at '2020-07-18 00.11.34'. 
+2020/07/18 00:11:34 Receive heartbeat from '192.168.1.70:57811', at '2020-07-18 00.11.34', count =  1.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 1
+2020/07/18 00:11:34 Receive heartbeat from '192.168.1.70:57811', at '2020-07-18 00.11.34', count =  2.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 2
+2020/07/18 00:11:34 Receive heartbeat from '192.168.1.70:57811', at '2020-07-18 00.11.34', count =  3.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 3
+2020/07/18 00:11:50 ************** Receive WRITE REGISTRATION request for file 'fs533testing.txt'.
+2020/07/18 00:11:50 The file fs533testing.txt is new so master node will allocate new replica nodes for it.
+2020/07/18 00:11:50 Send BACK UP request to all members.
+2020/07/18 00:11:50 Finish sending BACK UP request to all members.
+2020/07/18 00:11:50 ************** Send WRITE REGISTER response for file 'fs533testing.txt': version 1, preference nodes are '[192.168.1.101 192.168.1.70]', need user interaction is false.
+2020/07/18 00:11:50 ************** Receive WRITE PREPARATION request.
+2020/07/18 00:11:50 Write 1024 byte from client to file ___tempfile_d23f5e47-fb50-465c-ad5a-bf89b0b49ceb 
+2020/07/18 00:11:50 ************** Send WRITE PREPARATION response for file fs533testing.txt.
+2020/07/18 00:11:50 ************** Receive WRITE END request for file 'fs533testing.txt'.
+2020/07/18 00:11:50 send WRITE END request to all perference nodes '[192.168.1.101 192.168.1.70]'.
+2020/07/18 00:11:50 delete temporary file '___tempfile_d23f5e47-fb50-465c-ad5a-bf89b0b49ceb' for file 'fs533testing.txt'
+2020/07/18 00:11:50 File ../fs533db/___tempfile_d23f5e47-fb50-465c-ad5a-bf89b0b49ceb is removed
+2020/07/18 00:11:50 send WRITE END request to node '192.168.1.70'.
+2020/07/18 00:11:50 Send BACK UP request to all members.
+2020/07/18 00:11:50 Finish sending BACK UP request to all members.
+2020/07/18 00:11:50 ************** Send WRITE END response for file 'fs533testing.txt'.
+2020/07/18 00:12:03 Receive READ ACQUIRE request for file fs533testing.txt.
+2020/07/18 00:12:03 Send READ ACQUIRE response for file 'fs533testing.txt'. The replicated file was found with version '1' on  nodes '[192.168.1.101 192.168.1.70]'
+2020/07/18 00:15:16 Receive DELETE file fs533testing.txt request.
+2020/07/18 00:15:16 Error: it is unable to remove file fs533testing.txt due to error remove fs533testing.txt: The system cannot find the file specified.
+2020/07/18 00:15:16 Send BACK UP request to all members.
+2020/07/18 00:15:16 Finish sending BACK UP request to all members.
+2020/07/18 00:15:23 Receive LIST ALL request.
+2020/07/18 00:15:23 Send LIST ALL response.
+2020/07/18 00:24:08 ************** DETECT FAILURE of node '192.168.1.70' at '2020-07-18 00.24.08', last time received heartbeat is '2020-07-18T00:24:07-07:00', count = 2490, diff = 1201
+2020/07/18 00:24:08 Start notifying other nodes about failure of : 192.168.1.70
+2020/07/18 00:24:08 ************** REMOVE NODE '192.168.1.70-2020-07-18 00.11.33' at '2020-07-18 00.24.08' (previous index = 1). Active members: len = 1, [[192.168.1.101] ..... [192.168.1.101-2020-07-18 00.11.24]]
+2020/07/18 00:24:08 Send BACK UP request to all members.
+2020/07/18 00:24:08 Finish sending BACK UP request to all members.
+2020/07/18 00:24:08 Restart sending heartbeats since active members list has changed.
+2020/07/18 00:24:10 Uncaught error while listening to heartbeat read udp 192.168.1.101:4000: i/o timeout
+2020/07/18 00:11:24 Loading configuration...
+2020/07/18 00:11:24 local ip address =  192.168.1.101
+2020/07/18 00:11:24 Start membership list initialized with 1st member: len=1, members = [192.168.1.101] ... [192.168.1.101-2020-07-18 00.11.24]
+.
+2020/07/18 00:11:24 Start sending heart beats...
+2020/07/18 00:11:24 Start mornitoring heart beats...
+2020/07/18 00:11:24 Start membership service 'node0' listening at '192.168.1.101:50051'...
+2020/07/18 00:11:24 Start file service 'node0' listening at '192.168.1.101:50051'...
+2020/07/18 00:11:33 RECEIVE NEW JOIN REQUEST from '192.168.1.70' with option spreading new join is true.
+2020/07/18 00:11:33 ************** ADD NEW JOIN ('192.168.1.70','192.168.1.70-2020-07-18 00.11.33) at 2020-07-18 00.11.33. Active members: len = 2, [[192.168.1.101 192.168.1.70] ..... [192.168.1.101-2020-07-18 00.11.24 192.168.1.70-2020-07-18 00.11.33]]
+2020/07/18 00:11:34 Start sending heartbeats to node 1 at '192.168.1.70', every 300 milliseconds
+.
+2020/07/18 00:11:34 Restart monitoring heartbeats since members list has changed.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 0
+2020/07/18 00:11:34 ************** HEARTBEAT PACKET: size =  6
+2020/07/18 00:11:34 Start listening to predecessor '1' from '192.168.1.70' at '2020-07-18 00.11.34'. 
+2020/07/18 00:11:34 Receive heartbeat from '192.168.1.70:57811', at '2020-07-18 00.11.34', count =  1.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 1
+2020/07/18 00:11:34 Receive heartbeat from '192.168.1.70:57811', at '2020-07-18 00.11.34', count =  2.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 2
+2020/07/18 00:11:34 Receive heartbeat from '192.168.1.70:57811', at '2020-07-18 00.11.34', count =  3.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 3
+2020/07/18 00:11:50 ************** Receive WRITE REGISTRATION request for file 'fs533testing.txt'.
+2020/07/18 00:11:50 The file fs533testing.txt is new so master node will allocate new replica nodes for it.
+2020/07/18 00:11:50 Send BACK UP request to all members.
+2020/07/18 00:11:50 Finish sending BACK UP request to all members.
+2020/07/18 00:11:50 ************** Send WRITE REGISTER response for file 'fs533testing.txt': version 1, preference nodes are '[192.168.1.101 192.168.1.70]', need user interaction is false.
+2020/07/18 00:11:50 ************** Receive WRITE PREPARATION request.
+2020/07/18 00:11:50 Write 1024 byte from client to file ___tempfile_d23f5e47-fb50-465c-ad5a-bf89b0b49ceb 
+2020/07/18 00:11:50 ************** Send WRITE PREPARATION response for file fs533testing.txt.
+2020/07/18 00:11:50 ************** Receive WRITE END request for file 'fs533testing.txt'.
+2020/07/18 00:11:50 send WRITE END request to all perference nodes '[192.168.1.101 192.168.1.70]'.
+2020/07/18 00:11:50 delete temporary file '___tempfile_d23f5e47-fb50-465c-ad5a-bf89b0b49ceb' for file 'fs533testing.txt'
+2020/07/18 00:11:50 File ../fs533db/___tempfile_d23f5e47-fb50-465c-ad5a-bf89b0b49ceb is removed
+2020/07/18 00:11:50 send WRITE END request to node '192.168.1.70'.
+2020/07/18 00:11:50 Send BACK UP request to all members.
+2020/07/18 00:11:50 Finish sending BACK UP request to all members.
+2020/07/18 00:11:50 ************** Send WRITE END response for file 'fs533testing.txt'.
+2020/07/18 00:12:03 Receive READ ACQUIRE request for file fs533testing.txt.
+2020/07/18 00:12:03 Send READ ACQUIRE response for file 'fs533testing.txt'. The replicated file was found with version '1' on  nodes '[192.168.1.101 192.168.1.70]'
+2020/07/18 00:15:16 Receive DELETE file fs533testing.txt request.
+2020/07/18 00:15:16 Error: it is unable to remove file fs533testing.txt due to error remove fs533testing.txt: The system cannot find the file specified.
+2020/07/18 00:15:16 Send BACK UP request to all members.
+2020/07/18 00:15:16 Finish sending BACK UP request to all members.
+2020/07/18 00:15:23 Receive LIST ALL request.
+2020/07/18 00:15:23 Send LIST ALL response.
+2020/07/18 00:24:08 ************** DETECT FAILURE of node '192.168.1.70' at '2020-07-18 00.24.08', last time received heartbeat is '2020-07-18T00:24:07-07:00', count = 2490, diff = 1201
+2020/07/18 00:24:08 Start notifying other nodes about failure of : 192.168.1.70
+2020/07/18 00:24:08 ************** REMOVE NODE '192.168.1.70-2020-07-18 00.11.33' at '2020-07-18 00.24.08' (previous index = 1). Active members: len = 1, [[192.168.1.101] ..... [192.168.1.101-2020-07-18 00.11.24]]
+2020/07/18 00:24:08 Send BACK UP request to all members.
+2020/07/18 00:24:08 Finish sending BACK UP request to all members.
+2020/07/18 00:24:08 Restart sending heartbeats since active members list has changed.
+2020/07/18 00:24:10 Uncaught error while listening to heartbeat read udp 192.168.1.101:4000: i/o timeout
+2020/07/18 00:11:24 Loading configuration...
+2020/07/18 00:11:24 local ip address =  192.168.1.101
+2020/07/18 00:11:24 Start membership list initialized with 1st member: len=1, members = [192.168.1.101] ... [192.168.1.101-2020-07-18 00.11.24]
+.
+2020/07/18 00:11:24 Start sending heart beats...
+2020/07/18 00:11:24 Start mornitoring heart beats...
+2020/07/18 00:11:24 Start membership service 'node0' listening at '192.168.1.101:50051'...
+2020/07/18 00:11:24 Start file service 'node0' listening at '192.168.1.101:50051'...
+2020/07/18 00:11:33 RECEIVE NEW JOIN REQUEST from '192.168.1.70' with option spreading new join is true.
+2020/07/18 00:11:33 ************** ADD NEW JOIN ('192.168.1.70','192.168.1.70-2020-07-18 00.11.33) at 2020-07-18 00.11.33. Active members: len = 2, [[192.168.1.101 192.168.1.70] ..... [192.168.1.101-2020-07-18 00.11.24 192.168.1.70-2020-07-18 00.11.33]]
+2020/07/18 00:11:34 Start sending heartbeats to node 1 at '192.168.1.70', every 300 milliseconds
+.
+2020/07/18 00:11:34 Restart monitoring heartbeats since members list has changed.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 0
+2020/07/18 00:11:34 ************** HEARTBEAT PACKET: size =  6
+2020/07/18 00:11:34 Start listening to predecessor '1' from '192.168.1.70' at '2020-07-18 00.11.34'. 
+2020/07/18 00:11:34 Receive heartbeat from '192.168.1.70:57811', at '2020-07-18 00.11.34', count =  1.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 1
+2020/07/18 00:11:34 Receive heartbeat from '192.168.1.70:57811', at '2020-07-18 00.11.34', count =  2.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 2
+2020/07/18 00:11:34 Receive heartbeat from '192.168.1.70:57811', at '2020-07-18 00.11.34', count =  3.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 3
+2020/07/18 00:11:50 ************** Receive WRITE REGISTRATION request for file 'fs533testing.txt'.
+2020/07/18 00:11:50 The file fs533testing.txt is new so master node will allocate new replica nodes for it.
+2020/07/18 00:11:50 Send BACK UP request to all members.
+2020/07/18 00:11:50 Finish sending BACK UP request to all members.
+2020/07/18 00:11:50 ************** Send WRITE REGISTER response for file 'fs533testing.txt': version 1, preference nodes are '[192.168.1.101 192.168.1.70]', need user interaction is false.
+2020/07/18 00:11:50 ************** Receive WRITE PREPARATION request.
+2020/07/18 00:11:50 Write 1024 byte from client to file ___tempfile_d23f5e47-fb50-465c-ad5a-bf89b0b49ceb 
+2020/07/18 00:11:50 ************** Send WRITE PREPARATION response for file fs533testing.txt.
+2020/07/18 00:11:50 ************** Receive WRITE END request for file 'fs533testing.txt'.
+2020/07/18 00:11:50 send WRITE END request to all perference nodes '[192.168.1.101 192.168.1.70]'.
+2020/07/18 00:11:50 delete temporary file '___tempfile_d23f5e47-fb50-465c-ad5a-bf89b0b49ceb' for file 'fs533testing.txt'
+2020/07/18 00:11:50 File ../fs533db/___tempfile_d23f5e47-fb50-465c-ad5a-bf89b0b49ceb is removed
+2020/07/18 00:11:50 send WRITE END request to node '192.168.1.70'.
+2020/07/18 00:11:50 Send BACK UP request to all members.
+2020/07/18 00:11:50 Finish sending BACK UP request to all members.
+2020/07/18 00:11:50 ************** Send WRITE END response for file 'fs533testing.txt'.
+2020/07/18 00:12:03 Receive READ ACQUIRE request for file fs533testing.txt.
+2020/07/18 00:12:03 Send READ ACQUIRE response for file 'fs533testing.txt'. The replicated file was found with version '1' on  nodes '[192.168.1.101 192.168.1.70]'
+2020/07/18 00:15:16 Receive DELETE file fs533testing.txt request.
+2020/07/18 00:15:16 Error: it is unable to remove file fs533testing.txt due to error remove fs533testing.txt: The system cannot find the file specified.
+2020/07/18 00:15:16 Send BACK UP request to all members.
+2020/07/18 00:15:16 Finish sending BACK UP request to all members.
+2020/07/18 00:15:23 Receive LIST ALL request.
+2020/07/18 00:15:23 Send LIST ALL response.
+2020/07/18 00:24:08 ************** DETECT FAILURE of node '192.168.1.70' at '2020-07-18 00.24.08', last time received heartbeat is '2020-07-18T00:24:07-07:00', count = 2490, diff = 1201
+2020/07/18 00:24:08 Start notifying other nodes about failure of : 192.168.1.70
+2020/07/18 00:24:08 ************** REMOVE NODE '192.168.1.70-2020-07-18 00.11.33' at '2020-07-18 00.24.08' (previous index = 1). Active members: len = 1, [[192.168.1.101] ..... [192.168.1.101-2020-07-18 00.11.24]]
+2020/07/18 00:24:08 Send BACK UP request to all members.
+2020/07/18 00:24:08 Finish sending BACK UP request to all members.
+2020/07/18 00:24:08 Restart sending heartbeats since active members list has changed.
+2020/07/18 00:24:10 Uncaught error while listening to heartbeat read udp 192.168.1.101:4000: i/o timeout
+
+2020/07/18 00:11:24 Loading configuration...
+2020/07/18 00:11:24 local ip address =  192.168.1.101
+2020/07/18 00:11:24 Start membership list initialized with 1st member: len=1, members = [192.168.1.101] ... [192.168.1.101-2020-07-18 00.11.24]
+.
+2020/07/18 00:11:24 Start sending heart beats...
+2020/07/18 00:11:24 Start mornitoring heart beats...
+2020/07/18 00:11:24 Start membership service 'node0' listening at '192.168.1.101:50051'...
+2020/07/18 00:11:24 Start file service 'node0' listening at '192.168.1.101:50051'...
+2020/07/18 00:11:33 RECEIVE NEW JOIN REQUEST from '192.168.1.70' with option spreading new join is true.
+2020/07/18 00:11:33 ************** ADD NEW JOIN ('192.168.1.70','192.168.1.70-2020-07-18 00.11.33) at 2020-07-18 00.11.33. Active members: len = 2, [[192.168.1.101 192.168.1.70] ..... [192.168.1.101-2020-07-18 00.11.24 192.168.1.70-2020-07-18 00.11.33]]
+2020/07/18 00:11:34 Start sending heartbeats to node 1 at '192.168.1.70', every 300 milliseconds
+.
+2020/07/18 00:11:34 Restart monitoring heartbeats since members list has changed.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 0
+2020/07/18 00:11:34 ************** HEARTBEAT PACKET: size =  6
+2020/07/18 00:11:34 Start listening to predecessor '1' from '192.168.1.70' at '2020-07-18 00.11.34'. 
+2020/07/18 00:11:34 Receive heartbeat from '192.168.1.70:57811', at '2020-07-18 00.11.34', count =  1.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 1
+2020/07/18 00:11:34 Receive heartbeat from '192.168.1.70:57811', at '2020-07-18 00.11.34', count =  2.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 2
+2020/07/18 00:11:34 Receive heartbeat from '192.168.1.70:57811', at '2020-07-18 00.11.34', count =  3.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 3
+2020/07/18 00:11:50 ************** Receive WRITE REGISTRATION request for file 'fs533testing.txt'.
+2020/07/18 00:11:50 The file fs533testing.txt is new so master node will allocate new replica nodes for it.
+2020/07/18 00:11:50 Send BACK UP request to all members.
+2020/07/18 00:11:50 Finish sending BACK UP request to all members.
+2020/07/18 00:11:50 ************** Send WRITE REGISTER response for file 'fs533testing.txt': version 1, preference nodes are '[192.168.1.101 192.168.1.70]', need user interaction is false.
+2020/07/18 00:11:50 ************** Receive WRITE PREPARATION request.
+2020/07/18 00:11:50 Write 1024 byte from client to file ___tempfile_d23f5e47-fb50-465c-ad5a-bf89b0b49ceb 
+2020/07/18 00:11:50 ************** Send WRITE PREPARATION response for file fs533testing.txt.
+2020/07/18 00:11:50 ************** Receive WRITE END request for file 'fs533testing.txt'.
+2020/07/18 00:11:50 send WRITE END request to all perference nodes '[192.168.1.101 192.168.1.70]'.
+2020/07/18 00:11:50 delete temporary file '___tempfile_d23f5e47-fb50-465c-ad5a-bf89b0b49ceb' for file 'fs533testing.txt'
+2020/07/18 00:11:50 File ../fs533db/___tempfile_d23f5e47-fb50-465c-ad5a-bf89b0b49ceb is removed
+2020/07/18 00:11:50 send WRITE END request to node '192.168.1.70'.
+2020/07/18 00:11:50 Send BACK UP request to all members.
+2020/07/18 00:11:50 Finish sending BACK UP request to all members.
+2020/07/18 00:11:50 ************** Send WRITE END response for file 'fs533testing.txt'.
+2020/07/18 00:12:03 Receive READ ACQUIRE request for file fs533testing.txt.
+2020/07/18 00:12:03 Send READ ACQUIRE response for file 'fs533testing.txt'. The replicated file was found with version '1' on  nodes '[192.168.1.101 192.168.1.70]'
+2020/07/18 00:15:16 Receive DELETE file fs533testing.txt request.
+2020/07/18 00:15:16 Error: it is unable to remove file fs533testing.txt due to error remove fs533testing.txt: The system cannot find the file specified.
+2020/07/18 00:15:16 Send BACK UP request to all members.
+2020/07/18 00:15:16 Finish sending BACK UP request to all members.
+2020/07/18 00:15:23 Receive LIST ALL request.
+2020/07/18 00:15:23 Send LIST ALL response.
+2020/07/18 00:24:08 ************** DETECT FAILURE of node '192.168.1.70' at '2020-07-18 00.24.08', last time received heartbeat is '2020-07-18T00:24:07-07:00', count = 2490, diff = 1201
+2020/07/18 00:24:08 Start notifying other nodes about failure of : 192.168.1.70
+2020/07/18 00:24:08 ************** REMOVE NODE '192.168.1.70-2020-07-18 00.11.33' at '2020-07-18 00.24.08' (previous index = 1). Active members: len = 1, [[192.168.1.101] ..... [192.168.1.101-2020-07-18 00.11.24]]
+2020/07/18 00:24:08 Send BACK UP request to all members.
+2020/07/18 00:24:08 Finish sending BACK UP request to all members.
+2020/07/18 00:24:08 Restart sending heartbeats since active members list has changed.
+2020/07/18 00:24:10 Uncaught error while listening to heartbeat read udp 192.168.1.101:4000: i/o timeout
+
+2020/07/18 00:11:24 Loading configuration...
+2020/07/18 00:11:24 local ip address =  192.168.1.101
+2020/07/18 00:11:24 Start membership list initialized with 1st member: len=1, members = [192.168.1.101] ... [192.168.1.101-2020-07-18 00.11.24]
+.
+2020/07/18 00:11:24 Start sending heart beats...
+2020/07/18 00:11:24 Start mornitoring heart beats...
+2020/07/18 00:11:24 Start membership service 'node0' listening at '192.168.1.101:50051'...
+2020/07/18 00:11:24 Start file service 'node0' listening at '192.168.1.101:50051'...
+2020/07/18 00:11:33 RECEIVE NEW JOIN REQUEST from '192.168.1.70' with option spreading new join is true.
+2020/07/18 00:11:33 ************** ADD NEW JOIN ('192.168.1.70','192.168.1.70-2020-07-18 00.11.33) at 2020-07-18 00.11.33. Active members: len = 2, [[192.168.1.101 192.168.1.70] ..... [192.168.1.101-2020-07-18 00.11.24 192.168.1.70-2020-07-18 00.11.33]]
+2020/07/18 00:11:34 Start sending heartbeats to node 1 at '192.168.1.70', every 300 milliseconds
+.
+2020/07/18 00:11:34 Restart monitoring heartbeats since members list has changed.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 0
+2020/07/18 00:11:34 ************** HEARTBEAT PACKET: size =  6
+2020/07/18 00:11:34 Start listening to predecessor '1' from '192.168.1.70' at '2020-07-18 00.11.34'. 
+2020/07/18 00:11:34 Receive heartbeat from '192.168.1.70:57811', at '2020-07-18 00.11.34', count =  1.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 1
+2020/07/18 00:11:34 Receive heartbeat from '192.168.1.70:57811', at '2020-07-18 00.11.34', count =  2.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 2
+2020/07/18 00:11:34 Receive heartbeat from '192.168.1.70:57811', at '2020-07-18 00.11.34', count =  3.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 3
+2020/07/18 00:11:50 ************** Receive WRITE REGISTRATION request for file 'fs533testing.txt'.
+2020/07/18 00:11:50 The file fs533testing.txt is new so master node will allocate new replica nodes for it.
+2020/07/18 00:11:50 Send BACK UP request to all members.
+2020/07/18 00:11:50 Finish sending BACK UP request to all members.
+2020/07/18 00:11:50 ************** Send WRITE REGISTER response for file 'fs533testing.txt': version 1, preference nodes are '[192.168.1.101 192.168.1.70]', need user interaction is false.
+2020/07/18 00:11:50 ************** Receive WRITE PREPARATION request.
+2020/07/18 00:11:50 Write 1024 byte from client to file ___tempfile_d23f5e47-fb50-465c-ad5a-bf89b0b49ceb 
+2020/07/18 00:11:50 ************** Send WRITE PREPARATION response for file fs533testing.txt.
+2020/07/18 00:11:50 ************** Receive WRITE END request for file 'fs533testing.txt'.
+2020/07/18 00:11:50 send WRITE END request to all perference nodes '[192.168.1.101 192.168.1.70]'.
+2020/07/18 00:11:50 delete temporary file '___tempfile_d23f5e47-fb50-465c-ad5a-bf89b0b49ceb' for file 'fs533testing.txt'
+2020/07/18 00:11:50 File ../fs533db/___tempfile_d23f5e47-fb50-465c-ad5a-bf89b0b49ceb is removed
+2020/07/18 00:11:50 send WRITE END request to node '192.168.1.70'.
+2020/07/18 00:11:50 Send BACK UP request to all members.
+2020/07/18 00:11:50 Finish sending BACK UP request to all members.
+2020/07/18 00:11:50 ************** Send WRITE END response for file 'fs533testing.txt'.
+2020/07/18 00:12:03 Receive READ ACQUIRE request for file fs533testing.txt.
+2020/07/18 00:12:03 Send READ ACQUIRE response for file 'fs533testing.txt'. The replicated file was found with version '1' on  nodes '[192.168.1.101 192.168.1.70]'
+2020/07/18 00:15:16 Receive DELETE file fs533testing.txt request.
+2020/07/18 00:15:16 Error: it is unable to remove file fs533testing.txt due to error remove fs533testing.txt: The system cannot find the file specified.
+2020/07/18 00:15:16 Send BACK UP request to all members.
+2020/07/18 00:15:16 Finish sending BACK UP request to all members.
+2020/07/18 00:15:23 Receive LIST ALL request.
+2020/07/18 00:15:23 Send LIST ALL response.
+2020/07/18 00:24:08 ************** DETECT FAILURE of node '192.168.1.70' at '2020-07-18 00.24.08', last time received heartbeat is '2020-07-18T00:24:07-07:00', count = 2490, diff = 1201
+2020/07/18 00:24:08 Start notifying other nodes about failure of : 192.168.1.70
+2020/07/18 00:24:08 ************** REMOVE NODE '192.168.1.70-2020-07-18 00.11.33' at '2020-07-18 00.24.08' (previous index = 1). Active members: len = 1, [[192.168.1.101] ..... [192.168.1.101-2020-07-18 00.11.24]]
+2020/07/18 00:24:08 Send BACK UP request to all members.
+2020/07/18 00:24:08 Finish sending BACK UP request to all members.
+2020/07/18 00:24:08 Restart sending heartbeats since active members list has changed.
+2020/07/18 00:24:10 Uncaught error while listening to heartbeat read udp 192.168.1.101:4000: i/o timeout
+2020/07/18 00:11:24 Loading configuration...
+2020/07/18 00:11:24 local ip address =  192.168.1.101
+2020/07/18 00:11:24 Start membership list initialized with 1st member: len=1, members = [192.168.1.101] ... [192.168.1.101-2020-07-18 00.11.24]
+.
+2020/07/18 00:11:24 Start sending heart beats...
+2020/07/18 00:11:24 Start mornitoring heart beats...
+2020/07/18 00:11:24 Start membership service 'node0' listening at '192.168.1.101:50051'...
+2020/07/18 00:11:24 Start file service 'node0' listening at '192.168.1.101:50051'...
+2020/07/18 00:11:33 RECEIVE NEW JOIN REQUEST from '192.168.1.70' with option spreading new join is true.
+2020/07/18 00:11:33 ************** ADD NEW JOIN ('192.168.1.70','192.168.1.70-2020-07-18 00.11.33) at 2020-07-18 00.11.33. Active members: len = 2, [[192.168.1.101 192.168.1.70] ..... [192.168.1.101-2020-07-18 00.11.24 192.168.1.70-2020-07-18 00.11.33]]
+2020/07/18 00:11:34 Start sending heartbeats to node 1 at '192.168.1.70', every 300 milliseconds
+.
+2020/07/18 00:11:34 Restart monitoring heartbeats since members list has changed.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 0
+2020/07/18 00:11:34 ************** HEARTBEAT PACKET: size =  6
+2020/07/18 00:11:34 Start listening to predecessor '1' from '192.168.1.70' at '2020-07-18 00.11.34'. 
+2020/07/18 00:11:34 Receive heartbeat from '192.168.1.70:57811', at '2020-07-18 00.11.34', count =  1.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 1
+2020/07/18 00:11:34 Receive heartbeat from '192.168.1.70:57811', at '2020-07-18 00.11.34', count =  2.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 2
+2020/07/18 00:11:34 Receive heartbeat from '192.168.1.70:57811', at '2020-07-18 00.11.34', count =  3.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 3
+2020/07/18 00:11:50 ************** Receive WRITE REGISTRATION request for file 'fs533testing.txt'.
+2020/07/18 00:11:50 The file fs533testing.txt is new so master node will allocate new replica nodes for it.
+2020/07/18 00:11:50 Send BACK UP request to all members.
+2020/07/18 00:11:50 Finish sending BACK UP request to all members.
+2020/07/18 00:11:50 ************** Send WRITE REGISTER response for file 'fs533testing.txt': version 1, preference nodes are '[192.168.1.101 192.168.1.70]', need user interaction is false.
+2020/07/18 00:11:50 ************** Receive WRITE PREPARATION request.
+2020/07/18 00:11:50 Write 1024 byte from client to file ___tempfile_d23f5e47-fb50-465c-ad5a-bf89b0b49ceb 
+2020/07/18 00:11:50 ************** Send WRITE PREPARATION response for file fs533testing.txt.
+2020/07/18 00:11:50 ************** Receive WRITE END request for file 'fs533testing.txt'.
+2020/07/18 00:11:50 send WRITE END request to all perference nodes '[192.168.1.101 192.168.1.70]'.
+2020/07/18 00:11:50 delete temporary file '___tempfile_d23f5e47-fb50-465c-ad5a-bf89b0b49ceb' for file 'fs533testing.txt'
+2020/07/18 00:11:50 File ../fs533db/___tempfile_d23f5e47-fb50-465c-ad5a-bf89b0b49ceb is removed
+2020/07/18 00:11:50 send WRITE END request to node '192.168.1.70'.
+2020/07/18 00:11:50 Send BACK UP request to all members.
+2020/07/18 00:11:50 Finish sending BACK UP request to all members.
+2020/07/18 00:11:50 ************** Send WRITE END response for file 'fs533testing.txt'.
+2020/07/18 00:12:03 Receive READ ACQUIRE request for file fs533testing.txt.
+2020/07/18 00:12:03 Send READ ACQUIRE response for file 'fs533testing.txt'. The replicated file was found with version '1' on  nodes '[192.168.1.101 192.168.1.70]'
+2020/07/18 00:15:16 Receive DELETE file fs533testing.txt request.
+2020/07/18 00:15:16 Error: it is unable to remove file fs533testing.txt due to error remove fs533testing.txt: The system cannot find the file specified.
+2020/07/18 00:15:16 Send BACK UP request to all members.
+2020/07/18 00:15:16 Finish sending BACK UP request to all members.
+2020/07/18 00:15:23 Receive LIST ALL request.
+2020/07/18 00:15:23 Send LIST ALL response.
+2020/07/18 00:24:08 ************** DETECT FAILURE of node '192.168.1.70' at '2020-07-18 00.24.08', last time received heartbeat is '2020-07-18T00:24:07-07:00', count = 2490, diff = 1201
+2020/07/18 00:24:08 Start notifying other nodes about failure of : 192.168.1.70
+2020/07/18 00:24:08 ************** REMOVE NODE '192.168.1.70-2020-07-18 00.11.33' at '2020-07-18 00.24.08' (previous index = 1). Active members: len = 1, [[192.168.1.101] ..... [192.168.1.101-2020-07-18 00.11.24]]
+2020/07/18 00:24:08 Send BACK UP request to all members.
+2020/07/18 00:24:08 Finish sending BACK UP request to all members.
+2020/07/18 00:24:08 Restart sending heartbeats since active members list has changed.
+2020/07/18 00:24:10 Uncaught error while listening to heartbeat read udp 192.168.1.101:4000: i/o timeout
+2020/07/18 00:11:24 Loading configuration...
+2020/07/18 00:11:24 local ip address =  192.168.1.101
+2020/07/18 00:11:24 Start membership list initialized with 1st member: len=1, members = [192.168.1.101] ... [192.168.1.101-2020-07-18 00.11.24]
+.
+2020/07/18 00:11:24 Start sending heart beats...
+2020/07/18 00:11:24 Start mornitoring heart beats...
+2020/07/18 00:11:24 Start membership service 'node0' listening at '192.168.1.101:50051'...
+2020/07/18 00:11:24 Start file service 'node0' listening at '192.168.1.101:50051'...
+2020/07/18 00:11:33 RECEIVE NEW JOIN REQUEST from '192.168.1.70' with option spreading new join is true.
+2020/07/18 00:11:33 ************** ADD NEW JOIN ('192.168.1.70','192.168.1.70-2020-07-18 00.11.33) at 2020-07-18 00.11.33. Active members: len = 2, [[192.168.1.101 192.168.1.70] ..... [192.168.1.101-2020-07-18 00.11.24 192.168.1.70-2020-07-18 00.11.33]]
+2020/07/18 00:11:34 Start sending heartbeats to node 1 at '192.168.1.70', every 300 milliseconds
+.
+2020/07/18 00:11:34 Restart monitoring heartbeats since members list has changed.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 0
+2020/07/18 00:11:34 ************** HEARTBEAT PACKET: size =  6
+2020/07/18 00:11:34 Start listening to predecessor '1' from '192.168.1.70' at '2020-07-18 00.11.34'. 
+2020/07/18 00:11:34 Receive heartbeat from '192.168.1.70:57811', at '2020-07-18 00.11.34', count =  1.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 1
+2020/07/18 00:11:34 Receive heartbeat from '192.168.1.70:57811', at '2020-07-18 00.11.34', count =  2.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 2
+2020/07/18 00:11:34 Receive heartbeat from '192.168.1.70:57811', at '2020-07-18 00.11.34', count =  3.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 3
+2020/07/18 00:11:50 ************** Receive WRITE REGISTRATION request for file 'fs533testing.txt'.
+2020/07/18 00:11:50 The file fs533testing.txt is new so master node will allocate new replica nodes for it.
+2020/07/18 00:11:50 Send BACK UP request to all members.
+2020/07/18 00:11:50 Finish sending BACK UP request to all members.
+2020/07/18 00:11:50 ************** Send WRITE REGISTER response for file 'fs533testing.txt': version 1, preference nodes are '[192.168.1.101 192.168.1.70]', need user interaction is false.
+2020/07/18 00:11:50 ************** Receive WRITE PREPARATION request.
+2020/07/18 00:11:50 Write 1024 byte from client to file ___tempfile_d23f5e47-fb50-465c-ad5a-bf89b0b49ceb 
+2020/07/18 00:11:50 ************** Send WRITE PREPARATION response for file fs533testing.txt.
+2020/07/18 00:11:50 ************** Receive WRITE END request for file 'fs533testing.txt'.
+2020/07/18 00:11:50 send WRITE END request to all perference nodes '[192.168.1.101 192.168.1.70]'.
+2020/07/18 00:11:50 delete temporary file '___tempfile_d23f5e47-fb50-465c-ad5a-bf89b0b49ceb' for file 'fs533testing.txt'
+2020/07/18 00:11:50 File ../fs533db/___tempfile_d23f5e47-fb50-465c-ad5a-bf89b0b49ceb is removed
+2020/07/18 00:11:50 send WRITE END request to node '192.168.1.70'.
+2020/07/18 00:11:50 Send BACK UP request to all members.
+2020/07/18 00:11:50 Finish sending BACK UP request to all members.
+2020/07/18 00:11:50 ************** Send WRITE END response for file 'fs533testing.txt'.
+2020/07/18 00:12:03 Receive READ ACQUIRE request for file fs533testing.txt.
+2020/07/18 00:12:03 Send READ ACQUIRE response for file 'fs533testing.txt'. The replicated file was found with version '1' on  nodes '[192.168.1.101 192.168.1.70]'
+2020/07/18 00:15:16 Receive DELETE file fs533testing.txt request.
+2020/07/18 00:15:16 Error: it is unable to remove file fs533testing.txt due to error remove fs533testing.txt: The system cannot find the file specified.
+2020/07/18 00:15:16 Send BACK UP request to all members.
+2020/07/18 00:15:16 Finish sending BACK UP request to all members.
+2020/07/18 00:15:23 Receive LIST ALL request.
+2020/07/18 00:15:23 Send LIST ALL response.
+2020/07/18 00:24:08 ************** DETECT FAILURE of node '192.168.1.70' at '2020-07-18 00.24.08', last time received heartbeat is '2020-07-18T00:24:07-07:00', count = 2490, diff = 1201
+2020/07/18 00:24:08 Start notifying other nodes about failure of : 192.168.1.70
+2020/07/18 00:24:08 ************** REMOVE NODE '192.168.1.70-2020-07-18 00.11.33' at '2020-07-18 00.24.08' (previous index = 1). Active members: len = 1, [[192.168.1.101] ..... [192.168.1.101-2020-07-18 00.11.24]]
+2020/07/18 00:24:08 Send BACK UP request to all members.
+2020/07/18 00:24:08 Finish sending BACK UP request to all members.
+2020/07/18 00:24:08 Restart sending heartbeats since active members list has changed.
+2020/07/18 00:24:10 Uncaught error while listening to heartbeat read udp 192.168.1.101:4000: i/o timeout
+2020/07/18 00:11:24 Loading configuration...
+2020/07/18 00:11:24 local ip address =  192.168.1.101
+2020/07/18 00:11:24 Start membership list initialized with 1st member: len=1, members = [192.168.1.101] ... [192.168.1.101-2020-07-18 00.11.24]
+.
+2020/07/18 00:11:24 Start sending heart beats...
+2020/07/18 00:11:24 Start mornitoring heart beats...
+2020/07/18 00:11:24 Start membership service 'node0' listening at '192.168.1.101:50051'...
+2020/07/18 00:11:24 Start file service 'node0' listening at '192.168.1.101:50051'...
+2020/07/18 00:11:33 RECEIVE NEW JOIN REQUEST from '192.168.1.70' with option spreading new join is true.
+2020/07/18 00:11:33 ************** ADD NEW JOIN ('192.168.1.70','192.168.1.70-2020-07-18 00.11.33) at 2020-07-18 00.11.33. Active members: len = 2, [[192.168.1.101 192.168.1.70] ..... [192.168.1.101-2020-07-18 00.11.24 192.168.1.70-2020-07-18 00.11.33]]
+2020/07/18 00:11:34 Start sending heartbeats to node 1 at '192.168.1.70', every 300 milliseconds
+.
+2020/07/18 00:11:34 Restart monitoring heartbeats since members list has changed.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 0
+2020/07/18 00:11:34 ************** HEARTBEAT PACKET: size =  6
+2020/07/18 00:11:34 Start listening to predecessor '1' from '192.168.1.70' at '2020-07-18 00.11.34'. 
+2020/07/18 00:11:34 Receive heartbeat from '192.168.1.70:57811', at '2020-07-18 00.11.34', count =  1.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 1
+2020/07/18 00:11:34 Receive heartbeat from '192.168.1.70:57811', at '2020-07-18 00.11.34', count =  2.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 2
+2020/07/18 00:11:34 Receive heartbeat from '192.168.1.70:57811', at '2020-07-18 00.11.34', count =  3.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 3
+2020/07/18 00:11:50 ************** Receive WRITE REGISTRATION request for file 'fs533testing.txt'.
+2020/07/18 00:11:50 The file fs533testing.txt is new so master node will allocate new replica nodes for it.
+2020/07/18 00:11:50 Send BACK UP request to all members.
+2020/07/18 00:11:50 Finish sending BACK UP request to all members.
+2020/07/18 00:11:50 ************** Send WRITE REGISTER response for file 'fs533testing.txt': version 1, preference nodes are '[192.168.1.101 192.168.1.70]', need user interaction is false.
+2020/07/18 00:11:50 ************** Receive WRITE PREPARATION request.
+2020/07/18 00:11:50 Write 1024 byte from client to file ___tempfile_d23f5e47-fb50-465c-ad5a-bf89b0b49ceb 
+2020/07/18 00:11:50 ************** Send WRITE PREPARATION response for file fs533testing.txt.
+2020/07/18 00:11:50 ************** Receive WRITE END request for file 'fs533testing.txt'.
+2020/07/18 00:11:50 send WRITE END request to all perference nodes '[192.168.1.101 192.168.1.70]'.
+2020/07/18 00:11:50 delete temporary file '___tempfile_d23f5e47-fb50-465c-ad5a-bf89b0b49ceb' for file 'fs533testing.txt'
+2020/07/18 00:11:50 File ../fs533db/___tempfile_d23f5e47-fb50-465c-ad5a-bf89b0b49ceb is removed
+2020/07/18 00:11:50 send WRITE END request to node '192.168.1.70'.
+2020/07/18 00:11:50 Send BACK UP request to all members.
+2020/07/18 00:11:50 Finish sending BACK UP request to all members.
+2020/07/18 00:11:50 ************** Send WRITE END response for file 'fs533testing.txt'.
+2020/07/18 00:12:03 Receive READ ACQUIRE request for file fs533testing.txt.
+2020/07/18 00:12:03 Send READ ACQUIRE response for file 'fs533testing.txt'. The replicated file was found with version '1' on  nodes '[192.168.1.101 192.168.1.70]'
+2020/07/18 00:15:16 Receive DELETE file fs533testing.txt request.
+2020/07/18 00:15:16 Error: it is unable to remove file fs533testing.txt due to error remove fs533testing.txt: The system cannot find the file specified.
+2020/07/18 00:15:16 Send BACK UP request to all members.
+2020/07/18 00:15:16 Finish sending BACK UP request to all members.
+2020/07/18 00:15:23 Receive LIST ALL request.
+2020/07/18 00:15:23 Send LIST ALL response.
+2020/07/18 00:24:08 ************** DETECT FAILURE of node '192.168.1.70' at '2020-07-18 00.24.08', last time received heartbeat is '2020-07-18T00:24:07-07:00', count = 2490, diff = 1201
+2020/07/18 00:24:08 Start notifying other nodes about failure of : 192.168.1.70
+2020/07/18 00:24:08 ************** REMOVE NODE '192.168.1.70-2020-07-18 00.11.33' at '2020-07-18 00.24.08' (previous index = 1). Active members: len = 1, [[192.168.1.101] ..... [192.168.1.101-2020-07-18 00.11.24]]
+2020/07/18 00:24:08 Send BACK UP request to all members.
+2020/07/18 00:24:08 Finish sending BACK UP request to all members.
+2020/07/18 00:24:08 Restart sending heartbeats since active members list has changed.
+2020/07/18 00:24:10 Uncaught error while listening to heartbeat read udp 192.168.1.101:4000: i/o timeout
+
+2020/07/18 00:11:24 Loading configuration...
+2020/07/18 00:11:24 local ip address =  192.168.1.101
+2020/07/18 00:11:24 Start membership list initialized with 1st member: len=1, members = [192.168.1.101] ... [192.168.1.101-2020-07-18 00.11.24]
+.
+2020/07/18 00:11:24 Start sending heart beats...
+2020/07/18 00:11:24 Start mornitoring heart beats...
+2020/07/18 00:11:24 Start membership service 'node0' listening at '192.168.1.101:50051'...
+2020/07/18 00:11:24 Start file service 'node0' listening at '192.168.1.101:50051'...
+2020/07/18 00:11:33 RECEIVE NEW JOIN REQUEST from '192.168.1.70' with option spreading new join is true.
+2020/07/18 00:11:33 ************** ADD NEW JOIN ('192.168.1.70','192.168.1.70-2020-07-18 00.11.33) at 2020-07-18 00.11.33. Active members: len = 2, [[192.168.1.101 192.168.1.70] ..... [192.168.1.101-2020-07-18 00.11.24 192.168.1.70-2020-07-18 00.11.33]]
+2020/07/18 00:11:34 Start sending heartbeats to node 1 at '192.168.1.70', every 300 milliseconds
+.
+2020/07/18 00:11:34 Restart monitoring heartbeats since members list has changed.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 0
+2020/07/18 00:11:34 ************** HEARTBEAT PACKET: size =  6
+2020/07/18 00:11:34 Start listening to predecessor '1' from '192.168.1.70' at '2020-07-18 00.11.34'. 
+2020/07/18 00:11:34 Receive heartbeat from '192.168.1.70:57811', at '2020-07-18 00.11.34', count =  1.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 1
+2020/07/18 00:11:34 Receive heartbeat from '192.168.1.70:57811', at '2020-07-18 00.11.34', count =  2.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 2
+2020/07/18 00:11:34 Receive heartbeat from '192.168.1.70:57811', at '2020-07-18 00.11.34', count =  3.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 3
+2020/07/18 00:11:50 ************** Receive WRITE REGISTRATION request for file 'fs533testing.txt'.
+2020/07/18 00:11:50 The file fs533testing.txt is new so master node will allocate new replica nodes for it.
+2020/07/18 00:11:50 Send BACK UP request to all members.
+2020/07/18 00:11:50 Finish sending BACK UP request to all members.
+2020/07/18 00:11:50 ************** Send WRITE REGISTER response for file 'fs533testing.txt': version 1, preference nodes are '[192.168.1.101 192.168.1.70]', need user interaction is false.
+2020/07/18 00:11:50 ************** Receive WRITE PREPARATION request.
+2020/07/18 00:11:50 Write 1024 byte from client to file ___tempfile_d23f5e47-fb50-465c-ad5a-bf89b0b49ceb 
+2020/07/18 00:11:50 ************** Send WRITE PREPARATION response for file fs533testing.txt.
+2020/07/18 00:11:50 ************** Receive WRITE END request for file 'fs533testing.txt'.
+2020/07/18 00:11:50 send WRITE END request to all perference nodes '[192.168.1.101 192.168.1.70]'.
+2020/07/18 00:11:50 delete temporary file '___tempfile_d23f5e47-fb50-465c-ad5a-bf89b0b49ceb' for file 'fs533testing.txt'
+2020/07/18 00:11:50 File ../fs533db/___tempfile_d23f5e47-fb50-465c-ad5a-bf89b0b49ceb is removed
+2020/07/18 00:11:50 send WRITE END request to node '192.168.1.70'.
+2020/07/18 00:11:50 Send BACK UP request to all members.
+2020/07/18 00:11:50 Finish sending BACK UP request to all members.
+2020/07/18 00:11:50 ************** Send WRITE END response for file 'fs533testing.txt'.
+2020/07/18 00:12:03 Receive READ ACQUIRE request for file fs533testing.txt.
+2020/07/18 00:12:03 Send READ ACQUIRE response for file 'fs533testing.txt'. The replicated file was found with version '1' on  nodes '[192.168.1.101 192.168.1.70]'
+2020/07/18 00:15:16 Receive DELETE file fs533testing.txt request.
+2020/07/18 00:15:16 Error: it is unable to remove file fs533testing.txt due to error remove fs533testing.txt: The system cannot find the file specified.
+2020/07/18 00:15:16 Send BACK UP request to all members.
+2020/07/18 00:15:16 Finish sending BACK UP request to all members.
+2020/07/18 00:15:23 Receive LIST ALL request.
+2020/07/18 00:15:23 Send LIST ALL response.
+2020/07/18 00:24:08 ************** DETECT FAILURE of node '192.168.1.70' at '2020-07-18 00.24.08', last time received heartbeat is '2020-07-18T00:24:07-07:00', count = 2490, diff = 1201
+2020/07/18 00:24:08 Start notifying other nodes about failure of : 192.168.1.70
+2020/07/18 00:24:08 ************** REMOVE NODE '192.168.1.70-2020-07-18 00.11.33' at '2020-07-18 00.24.08' (previous index = 1). Active members: len = 1, [[192.168.1.101] ..... [192.168.1.101-2020-07-18 00.11.24]]
+2020/07/18 00:24:08 Send BACK UP request to all members.
+2020/07/18 00:24:08 Finish sending BACK UP request to all members.
+2020/07/18 00:24:08 Restart sending heartbeats since active members list has changed.
+2020/07/18 00:24:10 Uncaught error while listening to heartbeat read udp 192.168.1.101:4000: i/o timeout
+
+2020/07/18 00:11:24 Loading configuration...
+2020/07/18 00:11:24 local ip address =  192.168.1.101
+2020/07/18 00:11:24 Start membership list initialized with 1st member: len=1, members = [192.168.1.101] ... [192.168.1.101-2020-07-18 00.11.24]
+.
+2020/07/18 00:11:24 Start sending heart beats...
+2020/07/18 00:11:24 Start mornitoring heart beats...
+2020/07/18 00:11:24 Start membership service 'node0' listening at '192.168.1.101:50051'...
+2020/07/18 00:11:24 Start file service 'node0' listening at '192.168.1.101:50051'...
+2020/07/18 00:11:33 RECEIVE NEW JOIN REQUEST from '192.168.1.70' with option spreading new join is true.
+2020/07/18 00:11:33 ************** ADD NEW JOIN ('192.168.1.70','192.168.1.70-2020-07-18 00.11.33) at 2020-07-18 00.11.33. Active members: len = 2, [[192.168.1.101 192.168.1.70] ..... [192.168.1.101-2020-07-18 00.11.24 192.168.1.70-2020-07-18 00.11.33]]
+2020/07/18 00:11:34 Start sending heartbeats to node 1 at '192.168.1.70', every 300 milliseconds
+.
+2020/07/18 00:11:34 Restart monitoring heartbeats since members list has changed.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 0
+2020/07/18 00:11:34 ************** HEARTBEAT PACKET: size =  6
+2020/07/18 00:11:34 Start listening to predecessor '1' from '192.168.1.70' at '2020-07-18 00.11.34'. 
+2020/07/18 00:11:34 Receive heartbeat from '192.168.1.70:57811', at '2020-07-18 00.11.34', count =  1.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 1
+2020/07/18 00:11:34 Receive heartbeat from '192.168.1.70:57811', at '2020-07-18 00.11.34', count =  2.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 2
+2020/07/18 00:11:34 Receive heartbeat from '192.168.1.70:57811', at '2020-07-18 00.11.34', count =  3.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 3
+2020/07/18 00:11:50 ************** Receive WRITE REGISTRATION request for file 'fs533testing.txt'.
+2020/07/18 00:11:50 The file fs533testing.txt is new so master node will allocate new replica nodes for it.
+2020/07/18 00:11:50 Send BACK UP request to all members.
+2020/07/18 00:11:50 Finish sending BACK UP request to all members.
+2020/07/18 00:11:50 ************** Send WRITE REGISTER response for file 'fs533testing.txt': version 1, preference nodes are '[192.168.1.101 192.168.1.70]', need user interaction is false.
+2020/07/18 00:11:50 ************** Receive WRITE PREPARATION request.
+2020/07/18 00:11:50 Write 1024 byte from client to file ___tempfile_d23f5e47-fb50-465c-ad5a-bf89b0b49ceb 
+2020/07/18 00:11:50 ************** Send WRITE PREPARATION response for file fs533testing.txt.
+2020/07/18 00:11:50 ************** Receive WRITE END request for file 'fs533testing.txt'.
+2020/07/18 00:11:50 send WRITE END request to all perference nodes '[192.168.1.101 192.168.1.70]'.
+2020/07/18 00:11:50 delete temporary file '___tempfile_d23f5e47-fb50-465c-ad5a-bf89b0b49ceb' for file 'fs533testing.txt'
+2020/07/18 00:11:50 File ../fs533db/___tempfile_d23f5e47-fb50-465c-ad5a-bf89b0b49ceb is removed
+2020/07/18 00:11:50 send WRITE END request to node '192.168.1.70'.
+2020/07/18 00:11:50 Send BACK UP request to all members.
+2020/07/18 00:11:50 Finish sending BACK UP request to all members.
+2020/07/18 00:11:50 ************** Send WRITE END response for file 'fs533testing.txt'.
+2020/07/18 00:12:03 Receive READ ACQUIRE request for file fs533testing.txt.
+2020/07/18 00:12:03 Send READ ACQUIRE response for file 'fs533testing.txt'. The replicated file was found with version '1' on  nodes '[192.168.1.101 192.168.1.70]'
+2020/07/18 00:15:16 Receive DELETE file fs533testing.txt request.
+2020/07/18 00:15:16 Error: it is unable to remove file fs533testing.txt due to error remove fs533testing.txt: The system cannot find the file specified.
+2020/07/18 00:15:16 Send BACK UP request to all members.
+2020/07/18 00:15:16 Finish sending BACK UP request to all members.
+2020/07/18 00:15:23 Receive LIST ALL request.
+2020/07/18 00:15:23 Send LIST ALL response.
+2020/07/18 00:24:08 ************** DETECT FAILURE of node '192.168.1.70' at '2020-07-18 00.24.08', last time received heartbeat is '2020-07-18T00:24:07-07:00', count = 2490, diff = 1201
+2020/07/18 00:24:08 Start notifying other nodes about failure of : 192.168.1.70
+2020/07/18 00:24:08 ************** REMOVE NODE '192.168.1.70-2020-07-18 00.11.33' at '2020-07-18 00.24.08' (previous index = 1). Active members: len = 1, [[192.168.1.101] ..... [192.168.1.101-2020-07-18 00.11.24]]
+2020/07/18 00:24:08 Send BACK UP request to all members.
+2020/07/18 00:24:08 Finish sending BACK UP request to all members.
+2020/07/18 00:24:08 Restart sending heartbeats since active members list has changed.
+2020/07/18 00:24:10 Uncaught error while listening to heartbeat read udp 192.168.1.101:4000: i/o timeout
+2020/07/18 00:11:24 Loading configuration...
+2020/07/18 00:11:24 local ip address =  192.168.1.101
+2020/07/18 00:11:24 Start membership list initialized with 1st member: len=1, members = [192.168.1.101] ... [192.168.1.101-2020-07-18 00.11.24]
+.
+2020/07/18 00:11:24 Start sending heart beats...
+2020/07/18 00:11:24 Start mornitoring heart beats...
+2020/07/18 00:11:24 Start membership service 'node0' listening at '192.168.1.101:50051'...
+2020/07/18 00:11:24 Start file service 'node0' listening at '192.168.1.101:50051'...
+2020/07/18 00:11:33 RECEIVE NEW JOIN REQUEST from '192.168.1.70' with option spreading new join is true.
+2020/07/18 00:11:33 ************** ADD NEW JOIN ('192.168.1.70','192.168.1.70-2020-07-18 00.11.33) at 2020-07-18 00.11.33. Active members: len = 2, [[192.168.1.101 192.168.1.70] ..... [192.168.1.101-2020-07-18 00.11.24 192.168.1.70-2020-07-18 00.11.33]]
+2020/07/18 00:11:34 Start sending heartbeats to node 1 at '192.168.1.70', every 300 milliseconds
+.
+2020/07/18 00:11:34 Restart monitoring heartbeats since members list has changed.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 0
+2020/07/18 00:11:34 ************** HEARTBEAT PACKET: size =  6
+2020/07/18 00:11:34 Start listening to predecessor '1' from '192.168.1.70' at '2020-07-18 00.11.34'. 
+2020/07/18 00:11:34 Receive heartbeat from '192.168.1.70:57811', at '2020-07-18 00.11.34', count =  1.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 1
+2020/07/18 00:11:34 Receive heartbeat from '192.168.1.70:57811', at '2020-07-18 00.11.34', count =  2.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 2
+2020/07/18 00:11:34 Receive heartbeat from '192.168.1.70:57811', at '2020-07-18 00.11.34', count =  3.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 3
+2020/07/18 00:11:50 ************** Receive WRITE REGISTRATION request for file 'fs533testing.txt'.
+2020/07/18 00:11:50 The file fs533testing.txt is new so master node will allocate new replica nodes for it.
+2020/07/18 00:11:50 Send BACK UP request to all members.
+2020/07/18 00:11:50 Finish sending BACK UP request to all members.
+2020/07/18 00:11:50 ************** Send WRITE REGISTER response for file 'fs533testing.txt': version 1, preference nodes are '[192.168.1.101 192.168.1.70]', need user interaction is false.
+2020/07/18 00:11:50 ************** Receive WRITE PREPARATION request.
+2020/07/18 00:11:50 Write 1024 byte from client to file ___tempfile_d23f5e47-fb50-465c-ad5a-bf89b0b49ceb 
+2020/07/18 00:11:50 ************** Send WRITE PREPARATION response for file fs533testing.txt.
+2020/07/18 00:11:50 ************** Receive WRITE END request for file 'fs533testing.txt'.
+2020/07/18 00:11:50 send WRITE END request to all perference nodes '[192.168.1.101 192.168.1.70]'.
+2020/07/18 00:11:50 delete temporary file '___tempfile_d23f5e47-fb50-465c-ad5a-bf89b0b49ceb' for file 'fs533testing.txt'
+2020/07/18 00:11:50 File ../fs533db/___tempfile_d23f5e47-fb50-465c-ad5a-bf89b0b49ceb is removed
+2020/07/18 00:11:50 send WRITE END request to node '192.168.1.70'.
+2020/07/18 00:11:50 Send BACK UP request to all members.
+2020/07/18 00:11:50 Finish sending BACK UP request to all members.
+2020/07/18 00:11:50 ************** Send WRITE END response for file 'fs533testing.txt'.
+2020/07/18 00:12:03 Receive READ ACQUIRE request for file fs533testing.txt.
+2020/07/18 00:12:03 Send READ ACQUIRE response for file 'fs533testing.txt'. The replicated file was found with version '1' on  nodes '[192.168.1.101 192.168.1.70]'
+2020/07/18 00:15:16 Receive DELETE file fs533testing.txt request.
+2020/07/18 00:15:16 Error: it is unable to remove file fs533testing.txt due to error remove fs533testing.txt: The system cannot find the file specified.
+2020/07/18 00:15:16 Send BACK UP request to all members.
+2020/07/18 00:15:16 Finish sending BACK UP request to all members.
+2020/07/18 00:15:23 Receive LIST ALL request.
+2020/07/18 00:15:23 Send LIST ALL response.
+2020/07/18 00:24:08 ************** DETECT FAILURE of node '192.168.1.70' at '2020-07-18 00.24.08', last time received heartbeat is '2020-07-18T00:24:07-07:00', count = 2490, diff = 1201
+2020/07/18 00:24:08 Start notifying other nodes about failure of : 192.168.1.70
+2020/07/18 00:24:08 ************** REMOVE NODE '192.168.1.70-2020-07-18 00.11.33' at '2020-07-18 00.24.08' (previous index = 1). Active members: len = 1, [[192.168.1.101] ..... [192.168.1.101-2020-07-18 00.11.24]]
+2020/07/18 00:24:08 Send BACK UP request to all members.
+2020/07/18 00:24:08 Finish sending BACK UP request to all members.
+2020/07/18 00:24:08 Restart sending heartbeats since active members list has changed.
+2020/07/18 00:24:10 Uncaught error while listening to heartbeat read udp 192.168.1.101:4000: i/o timeout
+2020/07/18 00:11:24 Loading configuration...
+2020/07/18 00:11:24 local ip address =  192.168.1.101
+2020/07/18 00:11:24 Start membership list initialized with 1st member: len=1, members = [192.168.1.101] ... [192.168.1.101-2020-07-18 00.11.24]
+.
+2020/07/18 00:11:24 Start sending heart beats...
+2020/07/18 00:11:24 Start mornitoring heart beats...
+2020/07/18 00:11:24 Start membership service 'node0' listening at '192.168.1.101:50051'...
+2020/07/18 00:11:24 Start file service 'node0' listening at '192.168.1.101:50051'...
+2020/07/18 00:11:33 RECEIVE NEW JOIN REQUEST from '192.168.1.70' with option spreading new join is true.
+2020/07/18 00:11:33 ************** ADD NEW JOIN ('192.168.1.70','192.168.1.70-2020-07-18 00.11.33) at 2020-07-18 00.11.33. Active members: len = 2, [[192.168.1.101 192.168.1.70] ..... [192.168.1.101-2020-07-18 00.11.24 192.168.1.70-2020-07-18 00.11.33]]
+2020/07/18 00:11:34 Start sending heartbeats to node 1 at '192.168.1.70', every 300 milliseconds
+.
+2020/07/18 00:11:34 Restart monitoring heartbeats since members list has changed.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 0
+2020/07/18 00:11:34 ************** HEARTBEAT PACKET: size =  6
+2020/07/18 00:11:34 Start listening to predecessor '1' from '192.168.1.70' at '2020-07-18 00.11.34'. 
+2020/07/18 00:11:34 Receive heartbeat from '192.168.1.70:57811', at '2020-07-18 00.11.34', count =  1.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 1
+2020/07/18 00:11:34 Receive heartbeat from '192.168.1.70:57811', at '2020-07-18 00.11.34', count =  2.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 2
+2020/07/18 00:11:34 Receive heartbeat from '192.168.1.70:57811', at '2020-07-18 00.11.34', count =  3.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 3
+2020/07/18 00:11:50 ************** Receive WRITE REGISTRATION request for file 'fs533testing.txt'.
+2020/07/18 00:11:50 The file fs533testing.txt is new so master node will allocate new replica nodes for it.
+2020/07/18 00:11:50 Send BACK UP request to all members.
+2020/07/18 00:11:50 Finish sending BACK UP request to all members.
+2020/07/18 00:11:50 ************** Send WRITE REGISTER response for file 'fs533testing.txt': version 1, preference nodes are '[192.168.1.101 192.168.1.70]', need user interaction is false.
+2020/07/18 00:11:50 ************** Receive WRITE PREPARATION request.
+2020/07/18 00:11:50 Write 1024 byte from client to file ___tempfile_d23f5e47-fb50-465c-ad5a-bf89b0b49ceb 
+2020/07/18 00:11:50 ************** Send WRITE PREPARATION response for file fs533testing.txt.
+2020/07/18 00:11:50 ************** Receive WRITE END request for file 'fs533testing.txt'.
+2020/07/18 00:11:50 send WRITE END request to all perference nodes '[192.168.1.101 192.168.1.70]'.
+2020/07/18 00:11:50 delete temporary file '___tempfile_d23f5e47-fb50-465c-ad5a-bf89b0b49ceb' for file 'fs533testing.txt'
+2020/07/18 00:11:50 File ../fs533db/___tempfile_d23f5e47-fb50-465c-ad5a-bf89b0b49ceb is removed
+2020/07/18 00:11:50 send WRITE END request to node '192.168.1.70'.
+2020/07/18 00:11:50 Send BACK UP request to all members.
+2020/07/18 00:11:50 Finish sending BACK UP request to all members.
+2020/07/18 00:11:50 ************** Send WRITE END response for file 'fs533testing.txt'.
+2020/07/18 00:12:03 Receive READ ACQUIRE request for file fs533testing.txt.
+2020/07/18 00:12:03 Send READ ACQUIRE response for file 'fs533testing.txt'. The replicated file was found with version '1' on  nodes '[192.168.1.101 192.168.1.70]'
+2020/07/18 00:15:16 Receive DELETE file fs533testing.txt request.
+2020/07/18 00:15:16 Error: it is unable to remove file fs533testing.txt due to error remove fs533testing.txt: The system cannot find the file specified.
+2020/07/18 00:15:16 Send BACK UP request to all members.
+2020/07/18 00:15:16 Finish sending BACK UP request to all members.
+2020/07/18 00:15:23 Receive LIST ALL request.
+2020/07/18 00:15:23 Send LIST ALL response.
+2020/07/18 00:24:08 ************** DETECT FAILURE of node '192.168.1.70' at '2020-07-18 00.24.08', last time received heartbeat is '2020-07-18T00:24:07-07:00', count = 2490, diff = 1201
+2020/07/18 00:24:08 Start notifying other nodes about failure of : 192.168.1.70
+2020/07/18 00:24:08 ************** REMOVE NODE '192.168.1.70-2020-07-18 00.11.33' at '2020-07-18 00.24.08' (previous index = 1). Active members: len = 1, [[192.168.1.101] ..... [192.168.1.101-2020-07-18 00.11.24]]
+2020/07/18 00:24:08 Send BACK UP request to all members.
+2020/07/18 00:24:08 Finish sending BACK UP request to all members.
+2020/07/18 00:24:08 Restart sending heartbeats since active members list has changed.
+2020/07/18 00:24:10 Uncaught error while listening to heartbeat read udp 192.168.1.101:4000: i/o timeout
+2020/07/18 00:11:24 Loading configuration...
+2020/07/18 00:11:24 local ip address =  192.168.1.101
+2020/07/18 00:11:24 Start membership list initialized with 1st member: len=1, members = [192.168.1.101] ... [192.168.1.101-2020-07-18 00.11.24]
+.
+2020/07/18 00:11:24 Start sending heart beats...
+2020/07/18 00:11:24 Start mornitoring heart beats...
+2020/07/18 00:11:24 Start membership service 'node0' listening at '192.168.1.101:50051'...
+2020/07/18 00:11:24 Start file service 'node0' listening at '192.168.1.101:50051'...
+2020/07/18 00:11:33 RECEIVE NEW JOIN REQUEST from '192.168.1.70' with option spreading new join is true.
+2020/07/18 00:11:33 ************** ADD NEW JOIN ('192.168.1.70','192.168.1.70-2020-07-18 00.11.33) at 2020-07-18 00.11.33. Active members: len = 2, [[192.168.1.101 192.168.1.70] ..... [192.168.1.101-2020-07-18 00.11.24 192.168.1.70-2020-07-18 00.11.33]]
+2020/07/18 00:11:34 Start sending heartbeats to node 1 at '192.168.1.70', every 300 milliseconds
+.
+2020/07/18 00:11:34 Restart monitoring heartbeats since members list has changed.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 0
+2020/07/18 00:11:34 ************** HEARTBEAT PACKET: size =  6
+2020/07/18 00:11:34 Start listening to predecessor '1' from '192.168.1.70' at '2020-07-18 00.11.34'. 
+2020/07/18 00:11:34 Receive heartbeat from '192.168.1.70:57811', at '2020-07-18 00.11.34', count =  1.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 1
+2020/07/18 00:11:34 Receive heartbeat from '192.168.1.70:57811', at '2020-07-18 00.11.34', count =  2.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 2
+2020/07/18 00:11:34 Receive heartbeat from '192.168.1.70:57811', at '2020-07-18 00.11.34', count =  3.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 3
+2020/07/18 00:11:50 ************** Receive WRITE REGISTRATION request for file 'fs533testing.txt'.
+2020/07/18 00:11:50 The file fs533testing.txt is new so master node will allocate new replica nodes for it.
+2020/07/18 00:11:50 Send BACK UP request to all members.
+2020/07/18 00:11:50 Finish sending BACK UP request to all members.
+2020/07/18 00:11:50 ************** Send WRITE REGISTER response for file 'fs533testing.txt': version 1, preference nodes are '[192.168.1.101 192.168.1.70]', need user interaction is false.
+2020/07/18 00:11:50 ************** Receive WRITE PREPARATION request.
+2020/07/18 00:11:50 Write 1024 byte from client to file ___tempfile_d23f5e47-fb50-465c-ad5a-bf89b0b49ceb 
+2020/07/18 00:11:50 ************** Send WRITE PREPARATION response for file fs533testing.txt.
+2020/07/18 00:11:50 ************** Receive WRITE END request for file 'fs533testing.txt'.
+2020/07/18 00:11:50 send WRITE END request to all perference nodes '[192.168.1.101 192.168.1.70]'.
+2020/07/18 00:11:50 delete temporary file '___tempfile_d23f5e47-fb50-465c-ad5a-bf89b0b49ceb' for file 'fs533testing.txt'
+2020/07/18 00:11:50 File ../fs533db/___tempfile_d23f5e47-fb50-465c-ad5a-bf89b0b49ceb is removed
+2020/07/18 00:11:50 send WRITE END request to node '192.168.1.70'.
+2020/07/18 00:11:50 Send BACK UP request to all members.
+2020/07/18 00:11:50 Finish sending BACK UP request to all members.
+2020/07/18 00:11:50 ************** Send WRITE END response for file 'fs533testing.txt'.
+2020/07/18 00:12:03 Receive READ ACQUIRE request for file fs533testing.txt.
+2020/07/18 00:12:03 Send READ ACQUIRE response for file 'fs533testing.txt'. The replicated file was found with version '1' on  nodes '[192.168.1.101 192.168.1.70]'
+2020/07/18 00:15:16 Receive DELETE file fs533testing.txt request.
+2020/07/18 00:15:16 Error: it is unable to remove file fs533testing.txt due to error remove fs533testing.txt: The system cannot find the file specified.
+2020/07/18 00:15:16 Send BACK UP request to all members.
+2020/07/18 00:15:16 Finish sending BACK UP request to all members.
+2020/07/18 00:15:23 Receive LIST ALL request.
+2020/07/18 00:15:23 Send LIST ALL response.
+2020/07/18 00:24:08 ************** DETECT FAILURE of node '192.168.1.70' at '2020-07-18 00.24.08', last time received heartbeat is '2020-07-18T00:24:07-07:00', count = 2490, diff = 1201
+2020/07/18 00:24:08 Start notifying other nodes about failure of : 192.168.1.70
+2020/07/18 00:24:08 ************** REMOVE NODE '192.168.1.70-2020-07-18 00.11.33' at '2020-07-18 00.24.08' (previous index = 1). Active members: len = 1, [[192.168.1.101] ..... [192.168.1.101-2020-07-18 00.11.24]]
+2020/07/18 00:24:08 Send BACK UP request to all members.
+2020/07/18 00:24:08 Finish sending BACK UP request to all members.
+2020/07/18 00:24:08 Restart sending heartbeats since active members list has changed.
+2020/07/18 00:24:10 Uncaught error while listening to heartbeat read udp 192.168.1.101:4000: i/o timeout
+
+2020/07/18 00:11:50 ************** Receive WRITE PREPARATION request.
+2020/07/18 00:11:50 Write 1024 byte from client to file ___tempfile_d23f5e47-fb50-465c-ad5a-bf89b0b49ceb 
+2020/07/18 00:11:50 ************** Send WRITE PREPARATION response for file fs533testing.txt.
+2020/07/18 00:11:50 ************** Receive WRITE END request for file 'fs533testing.txt'.
+2020/07/18 00:11:50 send WRITE END request to all perference nodes '[192.168.1.101 192.168.1.70]'.
+2020/07/18 00:11:50 delete temporary file '___tempfile_d23f5e47-fb50-465c-ad5a-bf89b0b49ceb' for file 'fs533testing.txt'
+2020/07/18 00:11:50 File ../fs533db/___tempfile_d23f5e47-fb50-465c-ad5a-bf89b0b49ceb is removed
+2020/07/18 00:11:50 send WRITE END request to node '192.168.1.70'.
+2020/07/18 00:11:50 Send BACK UP request to all members.
+2020/07/18 00:11:50 Finish sending BACK UP request to all members.
+2020/07/18 00:11:50 ************** Send WRITE END response for file 'fs533testing.txt'.
+2020/07/18 00:12:03 Receive READ ACQUIRE request for file fs533testing.txt.
+2020/07/18 00:12:03 Send READ ACQUIRE response for file 'fs533testing.txt'. The replicated file was found with version '1' on  nodes '[192.168.1.101 192.168.1.70]'
+2020/07/18 00:15:16 Receive DELETE file fs533testing.txt request.
+2020/07/18 00:15:16 Error: it is unable to remove file fs533testing.txt due to error remove fs533testing.txt: The system cannot find the file specified.
+2020/07/18 00:15:16 Send BACK UP request to all members.
+2020/07/18 00:15:16 Finish sending BACK UP request to all members.
+2020/07/18 00:15:23 Receive LIST ALL request.
+2020/07/18 00:15:23 Send LIST ALL response.
+2020/07/18 00:24:08 ************** DETECT FAILURE of node '192.168.1.70' at '2020-07-18 00.24.08', last time received heartbeat is '2020-07-18T00:24:07-07:00', count = 2490, diff = 1201
+2020/07/18 00:24:08 Start notifying other nodes about failure of : 192.168.1.70
+2020/07/18 00:24:08 ************** REMOVE NODE '192.168.1.70-2020-07-18 00.11.33' at '2020-07-18 00.24.08' (previous index = 1). Active members: len = 1, [[192.168.1.101] ..... [192.168.1.101-2020-07-18 00.11.24]]
+2020/07/18 00:24:08 Send BACK UP request to all members.
+2020/07/18 00:24:08 Finish sending BACK UP request to all members.
+2020/07/18 00:24:08 Restart sending heartbeats since active members list has changed.
+2020/07/18 00:24:10 Uncaught error while listening to heartbeat read udp 192.168.1.101:4000: i/o timeout
+2020/07/18 00:11:24 Loading configuration...
+2020/07/18 00:11:24 local ip address =  192.168.1.101
+2020/07/18 00:11:24 Start membership list initialized with 1st member: len=1, members = [192.168.1.101] ... [192.168.1.101-2020-07-18 00.11.24]
+.
+2020/07/18 00:11:24 Start sending heart beats...
+2020/07/18 00:11:24 Start mornitoring heart beats...
+2020/07/18 00:11:24 Start membership service 'node0' listening at '192.168.1.101:50051'...
+2020/07/18 00:11:24 Start file service 'node0' listening at '192.168.1.101:50051'...
+2020/07/18 00:11:33 RECEIVE NEW JOIN REQUEST from '192.168.1.70' with option spreading new join is true.
+2020/07/18 00:11:33 ************** ADD NEW JOIN ('192.168.1.70','192.168.1.70-2020-07-18 00.11.33) at 2020-07-18 00.11.33. Active members: len = 2, [[192.168.1.101 192.168.1.70] ..... [192.168.1.101-2020-07-18 00.11.24 192.168.1.70-2020-07-18 00.11.33]]
+2020/07/18 00:11:34 Start sending heartbeats to node 1 at '192.168.1.70', every 300 milliseconds
+.
+2020/07/18 00:11:34 Restart monitoring heartbeats since members list has changed.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 0
+2020/07/18 00:11:34 ************** HEARTBEAT PACKET: size =  6
+2020/07/18 00:11:34 Start listening to predecessor '1' from '192.168.1.70' at '2020-07-18 00.11.34'. 
+2020/07/18 00:11:34 Receive heartbeat from '192.168.1.70:57811', at '2020-07-18 00.11.34', count =  1.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 1
+2020/07/18 00:11:34 Receive heartbeat from '192.168.1.70:57811', at '2020-07-18 00.11.34', count =  2.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 2
+2020/07/18 00:11:34 Receive heartbeat from '192.168.1.70:57811', at '2020-07-18 00.11.34', count =  3.
+2020/07/18 00:11:34 Send heartbeat to node '192.168.1.70:4000' at '2020-07-18 00.11.34', count = 3
+2020/07/18 00:11:50 ************** Receive WRITE REGISTRATION request for file 'fs533testing.txt'.
+2020/07/18 00:11:50 The file fs533testing.txt is new so master node will allocate new replica nodes for it.
+2020/07/18 00:11:50 Send BACK UP request to all members.
+2020/07/18 00:11:50 Finish sending BACK UP request to all members.
+2020/07/18 00:11:50 ************** Send WRITE REGISTER response for file 'fs533testing.txt': version 1, preference nodes are '[192.168.1.101 192.168.1.70]', need user interaction is false.
+2020/07/18 00:11:50 ************** Receive WRITE PREPARATION request.
+2020/07/18 00:11:50 Write 1024 byte from client to file ___tempfile_d23f5e47-fb50-465c-ad5a-bf89b0b49ceb 
+2020/07/18 00:11:50 ************** Send WRITE PREPARATION response for file fs533testing.txt.
+2020/07/18 00:11:50 ************** Receive WRITE END request for file 'fs533testing.txt'.
+2020/07/18 00:11:50 send WRITE END request to all perference nodes '[192.168.1.101 192.168.1.70]'.
+2020/07/18 00:11:50 delete temporary file '___tempfile_d23f5e47-fb50-465c-ad5a-bf89b0b49ceb' for file 'fs533testing.txt'
+2020/07/18 00:11:50 File ../fs533db/___tempfile_d23f5e47-fb50-465c-ad5a-bf89b0b49ceb is removed
+2020/07/18 00:11:50 send WRITE END request to node '192.168.1.70'.
+2020/07/18 00:11:50 Send BACK UP request to all members.
+2020/07/18 00:11:50 Finish sending BACK UP request to all members.
+2020/07/18 00:11:50 ************** Send WRITE END response for file 'fs533testing.txt'.
+2020/07/18 00:12:03 Receive READ ACQUIRE request for file fs533testing.txt.
+2020/07/18 00:12:03 Send READ ACQUIRE response for file 'fs533testing.txt'. The replicated file was found with version '1' on  nodes '[192.168.1.101 192.168.1.70]'
+2020/07/18 00:15:16 Receive DELETE file fs533testing.txt request.
+2020/07/18 00:15:16 Error: it is unable to remove file fs533testing.txt due to error remove fs533testing.txt: The system cannot find the file specified.
+2020/07/18 00:15:16 Send BACK UP request to all members.
+2020/07/18 00:15:16 Finish sending BACK UP request to all members.
+2020/07/18 00:15:23 Receive LIST ALL request.
+2020/07/18 00:15:23 Send LIST ALL response.
+2020/07/18 00:24:08 ************** DETECT FAILURE of node '192.168.1.70' at '2020-07-18 00.24.08', last time received heartbeat is '2020-07-18T00:24:07-07:00', count = 2490, diff = 1201
+2020/07/18 00:24:08 Start notifying other nodes about failure of : 192.168.1.70
+2020/07/18 00:24:08 ************** REMOVE NODE '192.168.1.70-2020-07-18 00.11.33' at '2020-07-18 00.24.08' (previous index = 1). Active members: len = 1, [[192.168.1.101] ..... [192.168.1.101-2020-07-18 00.11.24]]
+2020/07/18 00:24:08 Send BACK UP request to all members.
+2020/07/18 00:24:08 Finish sending BACK UP request to all members.
+2020/07/18 00:24:08 Restart sending heartbeats since active members list has changed.
+2020/07/18 00:24:10 Uncaught error while listening to heartbeat read udp 192.168.1.101:4000: i/o timeout
+
+
+

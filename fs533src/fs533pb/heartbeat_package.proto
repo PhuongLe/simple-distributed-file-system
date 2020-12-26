@@ -1,0 +1,11 @@
+
+syntax = "proto3";
+
+package fs533pb;
+
+option go_package = ".;fs533pb";
+
+message HeartbeatPacket {
+    int32 hbCount = 1;
+    int64   sent_time = 2;
+}
