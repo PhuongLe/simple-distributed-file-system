@@ -26,7 +26,7 @@ There are 2 sets of commands:
 
 A group of nodes can join membership service, in which the one who starts the membership will play master role. Each membership is a replica server for FS533 file service. The system uses heartbeats to detect failures as illustrated on the image below.
 <p align="center">
-   <img src="./readme/heartbeat.png" width="650" alt=""/>
+   <img src="./readme/heartbeat.png" width="300" alt=""/>
 </p>
 
 There are 3 commands for membership service
