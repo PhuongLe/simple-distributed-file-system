@@ -1,5 +1,7 @@
 # Simple distributed file system
 The distributed file system is designed to conduct basic file handling operations such as file write, read, delete and update. The system utilizes “Master Server” to handle the operations and the master is selected through the leader election process. In addition, the system can also tolerate multiple node failures without impacting file availability and file handling functionalities. It is designed such that every file is written onto 3 nodes asynchronous via an active replication process so as to maintain 3 replicas of the file in case of node failure. The put and read operation make use of Simple Write Quorum wherein R = W = 2. The failure detection mechanism is deployed such that every node sends and receives heartbeat messages from 2 successor and 2 predecessor nodes in a ring topology. 
+
+</br>
 **key-words**: fault-tolerance, distributed-system, consensus, heartbeat,raft, HDFS.
 
 The project contains only one application folder namely **membershipsrc\msservice**. The instructions to compile and run the membership service can be found below: 
